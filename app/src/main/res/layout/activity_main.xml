@@ -59,7 +59,6 @@
             android:layout_height="wrap_content"
             android:text="Refresh"
             android:layout_weight="1"
-            android:onClick="refreshClick"
             style="@style/Base.Widget.AppCompat.Button.Borderless"/>
     </LinearLayout>
 </RelativeLayout>
