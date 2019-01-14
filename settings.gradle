@@ -1,1 +1,10 @@
 include ':app'
+include ':domain'
+
+include ':data'
+include ':remote-api-base'
+project(':remote-api-base').projectDir = new File(rootDir, 'remote-api/remote-api-base')
+include ':remote-api-real'
+project(':remote-api-real').projectDir = new File(rootDir, 'remote-api/remote-api-real')
+include ':remote-api-mock'
+project(':remote-api-mock').projectDir = new File(rootDir, 'remote-api/remote-api-mock')
