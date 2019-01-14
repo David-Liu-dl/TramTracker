@@ -1,18 +1,17 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-
-
+    compileSdkVersion configuration.compileSdk
+    buildToolsVersion configuration.buildTools
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion configuration.minSdk
+        targetSdkVersion configuration.targetSdk
+    }
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -22,10 +21,33 @@ android {
         }
     }
 
+    flavorDimensions "environment"
+
+    productFlavors {
+        mock {
+            buildConfigField "String", "API_BASE_URL", "\"\""
+        }
+        prod {
+            buildConfigField "String", "API_BASE_URL", "\"http://ws3.tramtracker.com.au\""
+        }
+    }
+
+    // filter out mockRelease, stagingRelease and prodDebug builds.
+    android.variantFilter { variant ->
+        variant.getFlavors().each { flavor ->
+            if (flavor.name == 'prod' && variant.buildType.name == 'debug' ||
+                    flavor.name != 'prod' && variant.buildType.name == 'release') {
+                variant.setIgnore(true)
+            }
+        }
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':domain')
+
+    mockApi project(path: ':remote-api-mock')
+    prodApi project(path: ':remote-api-real')
 
     implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
     testImplementation 'junit:junit:4.12'

@@ -10,6 +10,7 @@ apply from: "$project.rootDir/gradle/versioning.gradle"
 android {
     compileSdkVersion configuration.compileSdk
     buildToolsVersion configuration.buildTools
+
     defaultConfig {
         minSdkVersion configuration.minSdk
         targetSdkVersion configuration.targetSdk
@@ -67,12 +68,36 @@ android {
         }
     }
 
+    flavorDimensions "environment"
+
+    productFlavors {
+        mock {
+            applicationIdSuffix ".mock"
+        }
+        prod {
+
+        }
+    }
+
+    // filter out mockRelease, stagingRelease and prodDebug builds.
+    android.variantFilter { variant ->
+        variant.getFlavors().each { flavor ->
+            if (flavor.name == 'prod' && variant.buildType.name == 'debug' ||
+                    flavor.name != 'prod' && variant.buildType.name == 'release') {
+                variant.setIgnore(true)
+            }
+        }
+    }
+
     testOptions {
         animationsDisabled = true
     }
 }
 
 dependencies {
+    implementation project(path: ':domain')
+    implementation project(path: ':data')
+
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
 
