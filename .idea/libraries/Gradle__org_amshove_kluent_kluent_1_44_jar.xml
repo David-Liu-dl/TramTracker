@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.amshove.kluent:kluent:1.44@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.amshove.kluent/kluent/1.44/64aad8078e599455bcf1b8fbe79470c51bdd6d17/kluent-1.44.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.amshove.kluent/kluent/1.44/c4b93e68e7773ee3590dad43e18c2e837dfabffa/kluent-1.44-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

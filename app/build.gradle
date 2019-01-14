@@ -1,38 +1,139 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+apply from: "$project.rootDir/gradle/versioning.gradle"
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion configuration.compileSdk
+    buildToolsVersion configuration.buildTools
     defaultConfig {
+        minSdkVersion configuration.minSdk
+        targetSdkVersion configuration.targetSdk
+
+        versionCode buildVersionCode()
+        versionName buildVersionName()
+
+        testApplicationId 'au.com.realestate.hometime.test'
+
         applicationId "au.com.realestate.hometime"
-        minSdkVersion 17
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // only support English for now
+        resConfigs "en"
+        // app name
+        resValue 'string', 'app_name', "HomeTime"
     }
+
+    packagingOptions {
+        exclude 'kotlin/**'
+        exclude '**/*.kotlin_metadata'
+        exclude 'META-INF/*.kotlin_module'
+        exclude 'META-INF/*.version'
+        exclude 'META-INF/*.properties'
+    }
+
+    lintOptions {
+        disable 'ParcelCreator'
+        disable 'GoogleAppIndexingWarning'
+        quiet true
+        ignoreWarnings true
+        htmlReport true
+        xmlReport true
+        htmlOutput file("$buildDir/reports/lint/lint-reports.html")
+        xmlOutput file("$buildDir/reports/lint/lint-reports.xml")
+        checkDependencies true
+        ignoreTestSources true
+        checkReleaseBuilds false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
+        debug {
+            ext.alwaysUpdateBuildId = false
+            testCoverageEnabled true
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    testOptions {
+        animationsDisabled = true
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
 
-    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
-    compile "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+    // AndroidX
+    implementation "androidx.annotation:annotation:${library.androidx.annotation}"
+    implementation "androidx.appcompat:appcompat:${library.androidx.appCompat}"
+    implementation "androidx.constraintlayout:constraintlayout:${library.androidx.constraintLayout}"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:${library.androidx.coordinatorLayout}"
+    implementation "androidx.recyclerview:recyclerview:${library.androidx.recyclerView}"
+    implementation "androidx.fragment:fragment-ktx:${library.androidx.fragment}"
+    implementation "androidx.core:core-ktx:${library.androidx.core}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${library.androidx.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-livedata:${library.androidx.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-common-java8:${library.androidx.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${library.androidx.lifecycle}"
+    implementation "androidx.arch.core:core-runtime:${library.androidx.arch}"
 
+    // Material components
+    implementation "com.google.android.material:material:${library.material}"
 
-    testCompile 'junit:junit:4.12'
-}
+    // Butter knife
+    // use reflection-based ButterKnife for IDE builds for faster compilation during development
+    if (rootProject.hasProperty('android.injected.invoked.from.ide')) {
+        implementation "com.jakewharton:butterknife-reflect:${library.butterKnife}"
+    } else {
+        implementation "com.jakewharton:butterknife:${library.butterKnife}"
+        kapt "com.jakewharton:butterknife-compiler:${library.butterKnife}"
+    }
 
-buildscript {
-    ext.retrofit_version = '2.2.0'
+    // rx
+    implementation "io.reactivex.rxjava2:rxjava:${library.rxJava}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${library.rxKotlin}"
+    implementation "io.reactivex.rxjava2:rxandroid:${library.rxAndroid}"
+
+    // rxlint
+    debugImplementation "nl.littlerobots.rxlint:rxlint:${library.rxLint}"
+
+    // timber
+    implementation "com.jakewharton.timber:timber:${library.timber}"
+
+    // Koin
+    implementation "org.koin:koin-androidx-viewmodel:${library.koin}"
+    implementation "org.koin:koin-core-ext:${library.koin}"
+
+    // Unit tests
+    testImplementation "junit:junit:${library.junit}"
+    testImplementation "io.mockk:mockk:${library.mockk}"
+    testImplementation "org.amshove.kluent:kluent:${library.kluent}"
+    testImplementation "androidx.arch.core:core-testing:${library.androidx.arch}"
+    testImplementation "org.koin:koin-test:${library.koin}"
+
+    // Android tests
+    androidTestImplementation "androidx.test:core-ktx:${library.androidx.test.core}"
+    androidTestImplementation "androidx.test:monitor:${library.androidx.test.monitor}"
+    androidTestImplementation "androidx.test:runner:${library.androidx.test.runner}"
+    androidTestImplementation "androidx.test:rules:${library.androidx.test.rules}"
+    androidTestImplementation "androidx.test.ext:junit-ktx:${library.androidx.test.ext.junit}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${library.androidx.test.espresso}"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:${library.androidx.test.espresso}"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:${library.androidx.test.espresso}"
+    androidTestImplementation "androidx.fragment:fragment-testing:${library.androidx.fragment}"
+    androidTestImplementation "com.squareup.retrofit2:retrofit-mock:${library.retrofit}"
+    androidTestImplementation "org.amshove.kluent:kluent-android:${library.kluent}"
 }
