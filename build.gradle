@@ -47,6 +47,11 @@ buildscript {
             mockk                     : '1.8.13.kotlin13',
             kluent                    : '1.44'
     ]
+
+    ext.script = [
+            jacoco: '0.8.1'
+    ]
+
     repositories {
         mavenCentral()
         google()

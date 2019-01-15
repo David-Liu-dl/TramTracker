@@ -4,7 +4,7 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
-
+apply from: "$project.rootDir/gradle/jacoco.gradle"
 apply from: "$project.rootDir/gradle/versioning.gradle"
 
 android {
@@ -79,7 +79,7 @@ android {
         }
     }
 
-    // filter out mockRelease, stagingRelease and prodDebug builds.
+    // filter out mockRelease and prodDebug builds.
     android.variantFilter { variant ->
         variant.getFlavors().each { flavor ->
             if (flavor.name == 'prod' && variant.buildType.name == 'debug' ||
