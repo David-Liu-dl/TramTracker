@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion configuration.compileSdk
+    buildToolsVersion configuration.buildTools
+
+    defaultConfig {
+        minSdkVersion configuration.minSdk
+        targetSdkVersion configuration.targetSdk
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
+
+    implementation "androidx.test:core-ktx:${library.androidx.test.core}"
+    implementation "androidx.test.espresso:espresso-core:${library.androidx.test.espresso}"
+    implementation "androidx.test.espresso:espresso-contrib:${library.androidx.test.espresso}"
+    implementation "androidx.test.espresso:espresso-intents:${library.androidx.test.espresso}"
+}

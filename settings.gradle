@@ -1,10 +1,23 @@
 include ':app'
 include ':domain'
-
 include ':data'
 include ':remote-api-base'
 project(':remote-api-base').projectDir = new File(rootDir, 'remote-api/remote-api-base')
+
 include ':remote-api-real'
 project(':remote-api-real').projectDir = new File(rootDir, 'remote-api/remote-api-real')
+
 include ':remote-api-mock'
 project(':remote-api-mock').projectDir = new File(rootDir, 'remote-api/remote-api-mock')
+
+include ':core-infra'
+project(':core-infra').projectDir = new File(rootDir, 'library/core-infra')
+
+include ':core-infra-android'
+project(':core-infra-android').projectDir = new File(rootDir, 'library/core-infra-android')
+
+include ':core-infra-testing'
+project(':core-infra-testing').projectDir = new File(rootDir, 'library/core-infra-testing')
+
+include ':ui-testing-tools'
+project(':ui-testing-tools').projectDir = new File(rootDir, 'library/ui-testing-tools')

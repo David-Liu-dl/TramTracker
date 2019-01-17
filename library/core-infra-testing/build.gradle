@@ -1,0 +1,16 @@
+plugins {
+    id 'kotlin'
+}
+
+dependencies {
+    implementation project(path: ':core-infra')
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
+
+    // rx
+    implementation "io.reactivex.rxjava2:rxjava:${library.rxJava}"
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8

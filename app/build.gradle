@@ -4,7 +4,6 @@ plugins {
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
-apply from: "$project.rootDir/gradle/jacoco.gradle"
 apply from: "$project.rootDir/gradle/versioning.gradle"
 
 android {
@@ -19,9 +18,8 @@ android {
         versionName buildVersionName()
 
         testApplicationId 'au.com.realestate.hometime.test'
-
         applicationId "au.com.realestate.hometime"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "au.com.realestate.hometime.ScreenTestRunner"
 
         // only support English for now
         resConfigs "en"
@@ -97,7 +95,7 @@ android {
 dependencies {
     implementation project(path: ':domain')
     implementation project(path: ':data')
-
+    implementation project(path: ':core-infra-android')
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
 
@@ -143,6 +141,7 @@ dependencies {
     implementation "org.koin:koin-core-ext:${library.koin}"
 
     // Unit tests
+    testImplementation project(path: ':core-infra-testing')
     testImplementation "junit:junit:${library.junit}"
     testImplementation "io.mockk:mockk:${library.mockk}"
     testImplementation "org.amshove.kluent:kluent:${library.kluent}"
@@ -150,6 +149,8 @@ dependencies {
     testImplementation "org.koin:koin-test:${library.koin}"
 
     // Android tests
+    androidTestImplementation project(path: ':ui-testing-tools')
+    androidTestImplementation project(path: ':remote-api-mock')
     androidTestImplementation "androidx.test:core-ktx:${library.androidx.test.core}"
     androidTestImplementation "androidx.test:monitor:${library.androidx.test.monitor}"
     androidTestImplementation "androidx.test:runner:${library.androidx.test.runner}"

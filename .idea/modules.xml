@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Problem.iml" filepath="$PROJECT_DIR$/Problem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Problem.iml" filepath="$PROJECT_DIR$/.idea/Problem.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/core-infra/core-infra.iml" filepath="$PROJECT_DIR$/library/core-infra/core-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/core-infra-android/core-infra-android.iml" filepath="$PROJECT_DIR$/library/core-infra-android/core-infra-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/core-infra-testing/core-infra-testing.iml" filepath="$PROJECT_DIR$/library/core-infra-testing/core-infra-testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/remote-api/remote-api-base/remote-api-base.iml" filepath="$PROJECT_DIR$/remote-api/remote-api-base/remote-api-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/remote-api/remote-api-mock/remote-api-mock.iml" filepath="$PROJECT_DIR$/remote-api/remote-api-mock/remote-api-mock.iml" />
       <module fileurl="file://$PROJECT_DIR$/remote-api/remote-api-real/remote-api-real.iml" filepath="$PROJECT_DIR$/remote-api/remote-api-real/remote-api-real.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/ui-testing-tools/ui-testing-tools.iml" filepath="$PROJECT_DIR$/library/ui-testing-tools/ui-testing-tools.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,19 @@
+plugins {
+    id 'kotlin'
+}
+
+dependencies {
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
+
+    // rx
+    implementation "io.reactivex.rxjava2:rxjava:${library.rxJava}"
+
+    // Unit tests
+    testImplementation "junit:junit:${library.junit}"
+    testImplementation "org.amshove.kluent:kluent:${library.kluent}"
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8

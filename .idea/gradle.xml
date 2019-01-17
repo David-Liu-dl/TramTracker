@@ -11,6 +11,10 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/library/core-infra" />
+            <option value="$PROJECT_DIR$/library/core-infra-android" />
+            <option value="$PROJECT_DIR$/library/core-infra-testing" />
+            <option value="$PROJECT_DIR$/library/ui-testing-tools" />
             <option value="$PROJECT_DIR$/remote-api/remote-api-base" />
             <option value="$PROJECT_DIR$/remote-api/remote-api-mock" />
             <option value="$PROJECT_DIR$/remote-api/remote-api-real" />
