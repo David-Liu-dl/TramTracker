@@ -95,6 +95,7 @@ android {
 dependencies {
     implementation project(path: ':domain')
     implementation project(path: ':data')
+    implementation project(path: ':core-infra')
     implementation project(path: ':core-infra-android')
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"

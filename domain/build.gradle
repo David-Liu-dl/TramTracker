@@ -3,8 +3,22 @@ plugins {
 }
 
 dependencies {
+    implementation project(path: ':core-infra')
+
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
+
+    // rx
+    implementation "io.reactivex.rxjava2:rxjava:${library.rxJava}"
+
+    // Koin
+    implementation "org.koin:koin-core-ext:${library.koin}"
+
+    // Unit tests
+    testImplementation project(path: ':core-infra-testing')
+    testImplementation "junit:junit:${library.junit}"
+    testImplementation "io.mockk:mockk:${library.mockk}"
+    testImplementation "org.amshove.kluent:kluent:${library.kluent}"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8

@@ -49,8 +49,26 @@ dependencies {
     mockApi project(path: ':remote-api-mock')
     prodApi project(path: ':remote-api-real')
 
-    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${library.kotlin}"
+
+    // rx
+    implementation "io.reactivex.rxjava2:rxjava:${library.rxJava}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${library.rxKotlin}"
+
+    // rxlint
+    debugImplementation "nl.littlerobots.rxlint:rxlint:${library.rxLint}"
+
+    // timber
+    implementation "com.jakewharton.timber:timber:${library.timber}"
+
+    // Koin
+    implementation "org.koin:koin-android:${library.koin}"
+    implementation "org.koin:koin-core-ext:${library.koin}"
+
+    // Unit tests
+    testImplementation project(path: ':core-infra-testing')
+    testImplementation "junit:junit:${library.junit}"
+    testImplementation "io.mockk:mockk:${library.mockk}"
+    testImplementation "org.amshove.kluent:kluent:${library.kluent}"
 }
