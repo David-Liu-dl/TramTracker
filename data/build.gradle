@@ -1,4 +1,7 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
 
 android {
     compileSdkVersion configuration.compileSdk
@@ -7,6 +10,9 @@ android {
     defaultConfig {
         minSdkVersion configuration.minSdk
         targetSdkVersion configuration.targetSdk
+
+        // timeout for default HTTP connections - 10 seconds
+        buildConfigField "long", "NETWORK_TIMEOUT_SECONDS", "10"
     }
 
     compileOptions {
@@ -15,6 +21,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -45,6 +54,7 @@ android {
 
 dependencies {
     implementation project(path: ':domain')
+    implementation project(path: ':core-infra')
 
     mockApi project(path: ':remote-api-mock')
     prodApi project(path: ':remote-api-real')
