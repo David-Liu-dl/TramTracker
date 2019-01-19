@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".tramtimetable.TramTimetableActivity"/>
+        <activity android:name=".timetable.TimetableActivity"/>
     </application>
 
 </manifest>
