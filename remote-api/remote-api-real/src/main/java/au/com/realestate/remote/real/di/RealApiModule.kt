@@ -10,15 +10,16 @@ import org.koin.dsl.module.module
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.create
 import java.util.concurrent.TimeUnit
 
 val realApiModule = module {
 
-    single {
+    single<Moshi> {
         Moshi.Builder().build()
     }
 
-    single {
+    single<OkHttpClient> {
         val apiConfigs: ApiConfigs = get()
         OkHttpClient.Builder()
             .apply {
@@ -28,7 +29,7 @@ val realApiModule = module {
             }.build()
     }
 
-    single {
+    single<Retrofit> {
         val apiConfigs: ApiConfigs = get()
         Retrofit.Builder().apply {
             baseUrl(apiConfigs.baseUrl)
@@ -39,10 +40,10 @@ val realApiModule = module {
     }
 
     single{
-        get<Retrofit>().create(AuthService::class.java)
+        get<Retrofit>().create<AuthService>()
     }
 
     single{
-        get<Retrofit>().create(TramService::class.java)
+        get<Retrofit>().create<TramService>()
     }
 }

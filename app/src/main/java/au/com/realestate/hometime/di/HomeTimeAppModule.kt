@@ -2,7 +2,6 @@ package au.com.realestate.hometime.di
 
 import au.com.realestate.data.di.dataModule
 import au.com.realestate.domain.di.domainModule
-import au.com.realestate.hometime.apiModule
 import au.com.realestate.infra.SchedulerProvider
 import au.com.realestate.infra.android.rx.AndroidSchedulerProvider
 import au.com.realestate.infra.android.util.AnimationHelper

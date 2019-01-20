@@ -13,11 +13,11 @@ class MockTramService(private val behaviorDelegate: BehaviorDelegate<TramService
         tramId: Int,
         hideResponseObject: Boolean,
         aid: String,
-        devInfo: String
+        cid: String
     ): Single<HttpResponse<List<RouteResponse>>> {
         return behaviorDelegate.returningResponse(FakeGetNextPredictedRoutesCollectionResponse.httpRouteResponse)
             .getNextPredictedRoutesCollection(
-                stopId, tramId, hideResponseObject, aid, devInfo
+                stopId, tramId, hideResponseObject, aid, cid
             )
     }
 }

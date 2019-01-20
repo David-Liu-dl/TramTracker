@@ -72,6 +72,9 @@ android {
         mock {
             applicationIdSuffix ".mock"
         }
+        staging {
+            applicationIdSuffix ".staging"
+        }
         prod {
 
         }
@@ -88,8 +91,8 @@ android {
     }
 
     sourceSets {
-        // common source set for staging and prod
         mock.java.srcDir 'src/mock/java'
+        staging.java.srcDir 'src/staging/java'
         prod.java.srcDir 'src/prod/java'
     }
 

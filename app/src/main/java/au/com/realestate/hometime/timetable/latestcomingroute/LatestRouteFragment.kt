@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -103,7 +104,12 @@ class LatestRouteFragment : Fragment() {
                     getString(R.string.error_message_could_not_refresh_routes),
                     Snackbar.LENGTH_LONG
                 ).setAction(getString(R.string.action_retry), retryCallback)
-                errorRefreshingSnackbar?.show()
+                context?.let { notNullContext ->
+                    errorRefreshingSnackbar?.let {
+                        it.setActionTextColor(ContextCompat.getColor(notNullContext, R.color.colorTextLight))
+                        it.show()
+                    }
+                }
             } else {
                 errorRefreshingSnackbar?.dismiss()
             }

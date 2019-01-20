@@ -12,7 +12,7 @@ class HttpResponse<T>(
     @Json(name = "hasResponse")
     val hasResponse: Boolean? = null,
     @Json(name = "responseObject")
-    val responseObject: T,
+    val responseObject: T? = null,
     @Json(name = "timeRequested")
     val timeRequested: String,
     @Json(name = "timeResponded")

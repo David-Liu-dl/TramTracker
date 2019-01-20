@@ -7,11 +7,9 @@
     <string name="label_tram_id">Tram %1$d</string>
     <string name="label_time_remain">in %1$d mins</string>
 
-    <string name="action_retry">Retry</string>
+    <string name="action_retry">RETRY</string>
 
-    <string name="error_message_could_not_refresh_routes">Could not load trams timetable, please connect to the Internet
-        and try again.
-    </string>
+    <string name="error_message_could_not_refresh_routes">Could not load timetable</string>
 
     <string name="warning_no_available_routes">No Available Routes</string>
 

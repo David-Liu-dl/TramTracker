@@ -36,6 +36,9 @@ android {
         mock {
             buildConfigField "String", "API_BASE_URL", "\"\""
         }
+        staging {
+            buildConfigField "String", "API_BASE_URL", "\"http://ws3.tramtracker.com.au\""
+        }
         prod {
             buildConfigField "String", "API_BASE_URL", "\"http://ws3.tramtracker.com.au\""
         }
@@ -57,6 +60,7 @@ dependencies {
     implementation project(path: ':core-infra')
 
     mockApi project(path: ':remote-api-mock')
+    stagingApi project(path: ':remote-api-real')
     prodApi project(path: ':remote-api-real')
 
     // Kotlin
