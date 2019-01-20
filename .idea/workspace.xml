@@ -21,19 +21,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/morecomingroute/MoreRouteFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/ScreenTestApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/ScreenTestApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/HomeTimeApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/HomeTimeApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/TimberDebugTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/TimberDebugTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/TimberLogger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/TimberLogger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/TimetableViewModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/TimetableViewModelTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/core-infra-android/core-infra-android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/library/core-infra-android/core-infra-android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ui-testing-tools/ui-testing-tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/library/ui-testing-tools/ui-testing-tools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remote-api/remote-api-real/remote-api-real.iml" beforeDir="false" afterPath="$PROJECT_DIR$/remote-api/remote-api-real/remote-api-real.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/jacocoPlugin.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/jacocoPlugin.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +97,24 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Problem" type="f1a62948:ProjectNode" />
+                <item name=":data" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Problem" type="f1a62948:ProjectNode" />
+                <item name=":data" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Problem" type="f1a62948:ProjectNode" />
+                <item name=":data" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="reporting" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Problem" type="f1a62948:ProjectNode" />
                 <item name=":domain" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -139,11 +154,11 @@
           <entry key="Translations Editor" value="2" />
           <entry key="bat" value="1" />
           <entry key="class" value="2" />
-          <entry key="gradle" value="52" />
+          <entry key="gradle" value="55" />
           <entry key="gradlew" value="3" />
           <entry key="iml" value="1" />
           <entry key="java" value="60" />
-          <entry key="kt" value="331" />
+          <entry key="kt" value="332" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="pro" value="1" />
@@ -155,11 +170,11 @@
         <counts>
           <entry key="" value="2" />
           <entry key="CLASS" value="2" />
-          <entry key="Groovy" value="52" />
+          <entry key="Groovy" value="55" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="60" />
-          <entry key="Kotlin" value="331" />
+          <entry key="Kotlin" value="332" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="ProGuard File" value="1" />
@@ -169,16 +184,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="262" />
-          <entry key="kt" value="14319" />
+          <entry key="gradle" value="275" />
+          <entry key="kt" value="14321" />
           <entry key="properties" value="4" />
           <entry key="xml" value="1764" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="262" />
-          <entry key="Kotlin" value="14319" />
+          <entry key="Groovy" value="275" />
+          <entry key="Kotlin" value="14321" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="1764" />
         </counts>
@@ -190,76 +205,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/di/TestApiModule.kt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/di/TestHomeTimeAppModule.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt">
+        <entry file="file://$PROJECT_DIR$/gradle/jacocoPlugin.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
-              <folding>
-                <element signature="e#64#900#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding>
-                <element signature="e#46#364#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="60">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -11730,7 +11680,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_no_available_route.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/NoAvailableRouteViewHolder.kt" />
@@ -11765,7 +11714,6 @@
         <option value="$PROJECT_DIR$/domain/src/test/java/au/com/realestate/domain/route/model/RouteTest.kt" />
         <option value="$PROJECT_DIR$/domain/src/test/java/au/com/realestate/domain/route/usecase/GetNorthComingTramsTest.kt" />
         <option value="$PROJECT_DIR$/domain/src/test/java/au/com/realestate/domain/route/usecase/GetSouthComingTramsTest.kt" />
-        <option value="$PROJECT_DIR$/gradle/jacocoPlugin.gradle" />
         <option value="$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt" />
         <option value="$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/HttpExceptionDefiner.kt" />
         <option value="$PROJECT_DIR$/data/src/test/java/au/com/realestate/data/HttpExceptionDefinerTest.kt" />
@@ -11781,6 +11729,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/TimetableViewModelTest.kt" />
+        <option value="$PROJECT_DIR$/gradle/jacocoPlugin.gradle" />
       </list>
     </option>
   </component>
@@ -11808,715 +11758,12 @@
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-              <item name="assumption" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-              <item name="di" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="androidTest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-              <item name="latestcomingroute" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="hometime" type="462c0819:PsiDirectoryNode" />
-              <item name="timetable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="di" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="tram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="tram" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="tram" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-              <item name="di" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-              <item name="tram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-              <item name="tram" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="remote-api" type="462c0819:PsiDirectoryNode" />
-              <item name="remote-api-mock" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -12628,6 +11875,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="au.com.realestate.hometime.application" />
       <recent name="au.com.realestate.data" />
       <recent name="au.com.realestate.data.route" />
       <recent name="au.com.realestate.remote.tram.api" />
@@ -12680,7 +11928,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Problem:app [combinedTestReportMockDebug]">
+  <component name="RunManager" selected="Gradle.Problem:domain [jacocoTestReport]">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -12724,40 +11972,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="au.com.realestate.hometime.timetable.latestcomingroute" />
       <option name="MAIN_CLASS_NAME" value="au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragmentViewModelTest" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LatestRouteFragmentViewModelTest.should has correct states when error on refreshing" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="au.com.realestate.hometime.timetable.latestcomingroute.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="au.com.realestate.hometime.timetable.latestcomingroute" />
-      <option name="MAIN_CLASS_NAME" value="au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragmentViewModelTest" />
-      <option name="METHOD_NAME" value="should has correct states when error on refreshing" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LatestRouteFragmentViewModelTest.should has correct states when refresh finished" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="au.com.realestate.hometime.timetable.latestcomingroute.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="au.com.realestate.hometime.timetable.latestcomingroute" />
-      <option name="MAIN_CLASS_NAME" value="au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragmentViewModelTest" />
-      <option name="METHOD_NAME" value="should has correct states when refresh finished" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -12895,6 +12109,42 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Problem:data [combinedTestReportMockDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/data" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="combinedTestReportMockDebug" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Problem:domain [jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/domain" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jacocoTestReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
@@ -12905,19 +12155,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Android JUnit.LatestRouteFragmentViewModelTest.should has correct states when refresh finished" />
-      <item itemvalue="Android JUnit.LatestRouteFragmentViewModelTest.should has correct states when error on refreshing" />
       <item itemvalue="Android JUnit.LatestRouteFragmentViewModelTest" />
       <item itemvalue="Gradle.Problem:app [combinedTestReportMockDebug]" />
       <item itemvalue="Android Instrumented Tests.openTimetableScree...()" />
+      <item itemvalue="Gradle.Problem:data [combinedTestReportMockDebug]" />
+      <item itemvalue="Gradle.Problem:domain [jacocoTestReport]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Problem:domain [jacocoTestReport]" />
+        <item itemvalue="Gradle.Problem:data [combinedTestReportMockDebug]" />
         <item itemvalue="Android Instrumented Tests.openTimetableScree...()" />
         <item itemvalue="Gradle.Problem:app [combinedTestReportMockDebug]" />
         <item itemvalue="Android JUnit.LatestRouteFragmentViewModelTest" />
-        <item itemvalue="Android JUnit.LatestRouteFragmentViewModelTest.should has correct states when error on refreshing" />
-        <item itemvalue="Android JUnit.LatestRouteFragmentViewModelTest.should has correct states when refresh finished" />
       </list>
     </recent_temporary>
   </component>
@@ -12980,9 +12230,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.9072581" visible="true" weight="0.2912673" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.9072581" visible="true" weight="0.20447284" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" sideWeight="0.09274194" side_tool="true" visible="true" weight="0.2912673" />
+      <window_info id="Favorites" order="3" sideWeight="0.09274194" side_tool="true" visible="true" weight="0.20447284" />
       <window_info id="Build Variants" order="4" sideWeight="0.13895217" side_tool="true" weight="0.24707136" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
@@ -13000,7 +12250,7 @@
       <window_info anchor="right" id="StringPreview" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" visible="true" weight="0.14802982" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.14802982" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="PlantUML" order="4" />
       <window_info anchor="right" id="Preview" order="5" weight="0.34238553" />
@@ -13040,13 +12290,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/auth/api/AuthService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-dsl/1.8.13.kotlin13/184b67c6c94c5c666c46f44208166f56d439959a/mockk-dsl-1.8.13.kotlin13-sources.jar!/io/mockk/API.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -13216,13 +12459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/jacocoPlugin.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -13242,13 +12478,6 @@
     </entry>
     <entry file="android-dummy:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/Translations Editor">
       <provider selected="true" editor-type-id="string-resource-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/TimetableViewModelTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="59" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.amshove.kluent/kluent-common/1.44/daffba4d413d3eb96143df5ddf6487cb89400d36/kluent-common-1.44-sources.jar!/org/amshove/kluent/Basic.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -13376,13 +12605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -13400,27 +12622,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/gradle/versioning.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/TimetableViewModelTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        <state relative-caret-position="40">
+          <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
           <folding>
             <element signature="e#64#900#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/jacocoPlugin.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>

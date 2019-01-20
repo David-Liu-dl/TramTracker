@@ -1,4 +1,4 @@
-package au.com.realestate.hometime
+package au.com.realestate.hometime.application
 
 import android.app.Application
 import android.os.Looper

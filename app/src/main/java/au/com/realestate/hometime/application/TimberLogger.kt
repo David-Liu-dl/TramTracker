@@ -1,4 +1,4 @@
-package au.com.realestate.hometime
+package au.com.realestate.hometime.application
 
 import org.koin.log.Logger
 import timber.log.Timber
