@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="marginMedium">20dp</dimen>
+    <dimen name="elevation">6dp</dimen>
+
+    <dimen name="marginSmall">5dp</dimen>
+    <dimen name="marginMedium">15dp</dimen>
+    <dimen name="marginNormal">20dp</dimen>
 
     <dimen name="textSizeSmall">10sp</dimen>
     <dimen name="textSizeMedium">12sp</dimen>

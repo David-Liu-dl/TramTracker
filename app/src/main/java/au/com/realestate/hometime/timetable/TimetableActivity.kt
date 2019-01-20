@@ -6,33 +6,34 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commitNow
 import androidx.lifecycle.Observer
 import au.com.realestate.hometime.R
-import au.com.realestate.hometime.timetable.latestcomingtram.LatestComingTramFragment
-import au.com.realestate.hometime.timetable.morecomingtram.MoreComingTramFragment
+import au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragment
+import au.com.realestate.hometime.timetable.morecomingroute.MoreRouteFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
 class TimetableActivity : AppCompatActivity() {
 
     private val viewModel by viewModel<TimetableViewModel>(
-        parameters = { parametersOf(LatestComingTramFragment.TAG) }
+        parameters = { parametersOf(LatestRouteFragment.TAG) }
     )
 
-    private val latestComingTramFragmentProvider: () -> LatestComingTramFragment = {
-        LatestComingTramFragment.newInstance()
+    private val latestComingTramFragmentProvider: () -> LatestRouteFragment = {
+        LatestRouteFragment.newInstance()
     }
 
-    private val moreComingTramFragmentProvider: () -> MoreComingTramFragment = {
-        MoreComingTramFragment.newInstance()
+    private val moreComingTramFragmentProvider: () -> MoreRouteFragment = {
+        MoreRouteFragment.newInstance()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_timetable)
         viewModel.currentFragmentTag.observe(this, Observer { tag: String ->
             when (tag) {
-                LatestComingTramFragment.TAG -> {
+                LatestRouteFragment.TAG -> {
                     showNewScreen(latestComingTramFragmentProvider, tag)
                 }
-                MoreComingTramFragment.TAG -> {
+                MoreRouteFragment.TAG -> {
                     showNewScreen(moreComingTramFragmentProvider, tag)
                 }
                 else -> {

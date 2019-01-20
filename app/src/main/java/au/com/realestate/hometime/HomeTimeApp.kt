@@ -21,7 +21,7 @@ open class HomeTimeApp : Application() {
         initTimber()
     }
 
-    protected fun initKoin() {
+    protected open fun initKoin() {
         startKoin(this, modules, logger = TimberLogger())
     }
 

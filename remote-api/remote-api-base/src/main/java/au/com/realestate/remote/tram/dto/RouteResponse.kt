@@ -9,6 +9,8 @@ class RouteResponse(
     val type: String,
     @Json(name = "HasSpecialEvent")
     val hasSpecialEvent: Boolean,
+    @Json(name = "Destination")
+    val destination: String,
     @Json(name = "RouteNo")
     val routeNo: Int,
     @Json(name = "PredictedArrivalDateTime")

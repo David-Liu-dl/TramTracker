@@ -10,6 +10,7 @@
 
     <color name="colorError">#FF4081</color>
 
+    <color name="colorNormalText">#000000</color>
     <color name="colorLightGreyText">#757575</color>
 
 </resources>

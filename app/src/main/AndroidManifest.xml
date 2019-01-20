@@ -11,7 +11,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.HomeTime">
 
-        <activity android:name=".entrance.EntranceActivity">
+        <activity android:name=".timetable.TimetableActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".timetable.TimetableActivity"/>
+        <!--<activity android:name=".timetable.TimetableActivity"/>-->
     </application>
+
 
 </manifest>

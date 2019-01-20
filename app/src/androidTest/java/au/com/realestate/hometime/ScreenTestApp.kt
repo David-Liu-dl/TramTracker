@@ -1,3 +1,13 @@
 package au.com.realestate.hometime
 
-class ScreenTestApp: HomeTimeApp()
+import au.com.realestate.hometime.di.testModules
+import org.koin.android.ext.android.startKoin
+import org.koin.log.EmptyLogger
+
+class ScreenTestApp: HomeTimeApp() {
+
+    override fun initKoin() {
+        startKoin(this, testModules, logger = EmptyLogger())
+    }
+
+}

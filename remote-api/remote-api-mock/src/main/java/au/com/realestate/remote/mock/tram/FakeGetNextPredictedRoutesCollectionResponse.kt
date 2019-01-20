@@ -9,6 +9,7 @@ object FakeGetNextPredictedRoutesCollectionResponse {
         type = "NextPredictedRoutesCollectionInfo",
         hasSpecialEvent = true,
         routeNo = 78,
+        destination = "North Richmond",
         predictedArrivalDateTime = "/Date(1547859660000+1100)/",
         specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges"
     )
@@ -18,7 +19,7 @@ object FakeGetNextPredictedRoutesCollectionResponse {
             errorMessage = null,
             hasError = false,
             hasResponse = true,
-            responseObject = listOf(routeResponse),
+            responseObject = listOf(routeResponse, routeResponse),
             timeRequested = "/Date(1547858980631+1100)/",
             timeResponded = "/Date(1547858980643+1100)/",
             webMethodCalled = "GetDeviceToken"

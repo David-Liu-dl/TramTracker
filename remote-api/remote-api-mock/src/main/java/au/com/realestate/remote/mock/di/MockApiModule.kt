@@ -53,7 +53,7 @@ val mockApiModule = module {
         }
     }
 
-    single {
+    single <AuthService>{
         MockAuthService(
             MockRetrofit.Builder(get())
                 .let { builder ->
@@ -63,7 +63,7 @@ val mockApiModule = module {
         )
     }
 
-    single {
+    single<TramService> {
         MockTramService(
             MockRetrofit.Builder(get())
                 .let { builder ->

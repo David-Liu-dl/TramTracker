@@ -1,7 +1,7 @@
 package au.com.realestate.hometime.di
 
 import au.com.realestate.data.di.dataModule
-import au.com.realestate.domain.di.damainModule
+import au.com.realestate.domain.di.domainModule
 import au.com.realestate.hometime.apiModule
 import au.com.realestate.infra.SchedulerProvider
 import au.com.realestate.infra.android.rx.AndroidSchedulerProvider
@@ -21,7 +21,7 @@ val appModule = module {
 
 val modules = viewModules + listOf(
     appModule,
-    damainModule,
+    domainModule,
     dataModule,
     apiModule
 )

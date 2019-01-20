@@ -1,7 +1,6 @@
 package au.com.realestate.hometime.timetable
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import au.com.realestate.hometime.timetable.latestcomingtram.LatestComingTramFragment
 import org.amshove.kluent.shouldEqual
 import org.junit.Rule
 import org.junit.Test

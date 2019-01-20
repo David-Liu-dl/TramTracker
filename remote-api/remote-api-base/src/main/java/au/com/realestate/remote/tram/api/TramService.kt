@@ -9,13 +9,13 @@ import retrofit2.http.Query
 
 interface TramService {
 
-    @GET("/TramTracker/RestService//GetNextPredictedRoutesCollection/{stopId}/{tramId}/{hideResponseObject}")
+    @GET("/TramTracker/RestService//GetNextPredictedRoutesCollection/{stopId}/{directionId}/{hideResponseObject}")
     fun getNextPredictedRoutesCollection(
         @Path("stopId") stopId: Int,
-        @Path("tramId") tramId: Int,
+        @Path("directionId") tramId: Int,
         @Path("hideResponseObject") hideResponseObject: Boolean,
         @Query("aid") aid: String,
-        @Query("devInfo") devInfo: String
+        @Query("cid") cid: String
     ): Single<HttpResponse<List<RouteResponse>>>
 
 }
