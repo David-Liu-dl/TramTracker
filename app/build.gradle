@@ -171,5 +171,6 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-intents:${library.androidx.test.espresso}"
     androidTestImplementation "androidx.fragment:fragment-testing:${library.androidx.fragment}"
     androidTestImplementation "com.squareup.retrofit2:retrofit-mock:${library.retrofit}"
+    androidTestImplementation "io.mockk:mockk:${library.mockk}"
     androidTestImplementation "org.amshove.kluent:kluent-android:${library.kluent}"
 }

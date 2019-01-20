@@ -7,7 +7,6 @@ import androidx.fragment.app.commitNow
 import androidx.lifecycle.Observer
 import au.com.realestate.hometime.R
 import au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragment
-import au.com.realestate.hometime.timetable.morecomingroute.MoreRouteFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
@@ -21,10 +20,6 @@ class TimetableActivity : AppCompatActivity() {
         LatestRouteFragment.newInstance()
     }
 
-    private val moreComingTramFragmentProvider: () -> MoreRouteFragment = {
-        MoreRouteFragment.newInstance()
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timetable)
@@ -32,9 +27,6 @@ class TimetableActivity : AppCompatActivity() {
             when (tag) {
                 LatestRouteFragment.TAG -> {
                     showNewScreen(latestComingTramFragmentProvider, tag)
-                }
-                MoreRouteFragment.TAG -> {
-                    showNewScreen(moreComingTramFragmentProvider, tag)
                 }
                 else -> {
                     throw RuntimeException("NoSuchFragment $tag")

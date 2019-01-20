@@ -9,7 +9,4 @@ class TimetableViewModel(
 
     val currentFragmentTag = MutableLiveData<String>().apply { value = initialFragmentTag }
 
-    fun switchToFragment(fragmentTag: String) {
-        currentFragmentTag.value = fragmentTag
-    }
 }
