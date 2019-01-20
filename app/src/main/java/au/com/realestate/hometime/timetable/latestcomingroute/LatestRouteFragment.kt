@@ -11,8 +11,6 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import au.com.realestate.domain.route.model.Direction
-import au.com.realestate.domain.route.model.Route
 import au.com.realestate.hometime.R
 import au.com.realestate.hometime.common.RouteComparator
 import au.com.realestate.hometime.common.RouteDirectionComparator

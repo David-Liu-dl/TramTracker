@@ -15,6 +15,7 @@ val dataModule = module {
     single<RouteRepository> {
         RouteRepositoryImpl(
             tramService = get(),
+            authService = get(),
             httpErrorDefiner = get()
         )
     }

@@ -15,7 +15,8 @@ interface TramService {
         @Path("directionId") tramId: Int,
         @Path("hideResponseObject") hideResponseObject: Boolean,
         @Query("aid") aid: String,
-        @Query("cid") cid: String
+        @Query("cid") cid: String,
+        @Query("tkn") tkn: String
     ): Single<HttpResponse<List<RouteResponse>>>
 
 }
