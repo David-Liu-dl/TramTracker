@@ -1,9 +1,22 @@
 apply plugin: "com.vanniktech.android.junit.jacoco"
 
 junitJacoco {
+    def excludesDirs = [
+            '**/R.class',
+            '**/R$*.class',
+            '**/*$ViewInjector*.*',
+            '**/BuildConfig.*',
+            '**/Manifest*.*',
+            '**/*Test*.*',
+            'android/**/*.*',
+            '**/*Fragment.*',
+            '**/*Activity.*',
+            '**/di/**'
+    ]
+
     jacocoVersion = "${library.jacoco}" // type String
     ignoreProjects = [] // type String array
-    excludes // type String List
+    excludes = excludesDirs // type String List
     includeNoLocationClasses = false // type boolean
     includeInstrumentationCoverageInMergedReport = false // type boolean
 }

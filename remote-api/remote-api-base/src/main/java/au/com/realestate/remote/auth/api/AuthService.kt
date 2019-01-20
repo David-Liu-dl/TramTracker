@@ -11,7 +11,7 @@ interface AuthService {
     @GET("/TramTracker/RestService/GetDeviceToken")
     fun getDeviceToken(
         @Query("aid") aid: String,
-        @Query("devInfo") cid: String
+        @Query("devInfo") devInfo: String
     ): Single<HttpResponse<List<DeviceTokenResponse>>>
 
 }

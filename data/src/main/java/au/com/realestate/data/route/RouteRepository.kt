@@ -1,9 +1,9 @@
 package au.com.realestate.data.route
 
+import au.com.realestate.data.HttpExceptionDefiner
 import au.com.realestate.domain.route.model.Direction
 import au.com.realestate.domain.route.model.Route
 import au.com.realestate.domain.route.repository.RouteRepository
-import au.com.realestate.remote.HttpExceptionDefiner
 import au.com.realestate.remote.auth.api.AuthService
 import au.com.realestate.remote.tram.api.TramService
 import io.reactivex.Maybe
@@ -67,7 +67,7 @@ class RouteRepositoryImpl(
     }
 
     private fun getToken(): Single<String> {
-        return this.cachedAuthDeviceToken.switchIfEmpty(this.fetchToken())
+        return this.cachedAuthDeviceToken.switchIfEmpty(Single.defer(this::fetchToken))
     }
 
     private fun fetchToken(): Single<String> {
