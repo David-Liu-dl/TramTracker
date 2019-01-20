@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LatestRouteFragmentViewModel.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">au.com.realestate.hometime.timetable.latestcomingroute</a> &gt; <span class="el_source">LatestRouteFragmentViewModel.kt</span></div><h1>LatestRouteFragmentViewModel.kt</h1><pre class="source lang-java linenums">package au.com.realestate.hometime.timetable.latestcomingroute
+
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import au.com.realestate.domain.route.model.Direction
+import au.com.realestate.domain.route.model.Route
+import au.com.realestate.domain.route.usecase.GetNorthComingTrams
+import au.com.realestate.domain.route.usecase.GetSouthComingTrams
+import au.com.realestate.hometime.common.uimodels.RouteHeader
+import au.com.realestate.infra.util.Clock
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.rxkotlin.plusAssign
+import io.reactivex.rxkotlin.subscribeBy
+import io.reactivex.rxkotlin.zipWith
+import java.time.LocalDateTime
+import java.util.*
+
+const val routeId = 78
+
+<span class="fc" id="L20">class LatestRouteFragmentViewModel(</span>
+    private val getSouthComingTrams: GetSouthComingTrams,
+    private val getNorthComingTrams: GetNorthComingTrams,
+    private val clock: Clock
+<span class="fc" id="L24">) : ViewModel() {</span>
+
+<span class="fc" id="L26">    val tramsWithDirection = MutableLiveData&lt;Map&lt;RouteHeader, List&lt;Route&gt;&gt;&gt;().apply { value = emptyMap() }</span>
+<span class="fc" id="L27">    val lastUpdatedDateTime = MutableLiveData&lt;Date&gt;().apply { value = null }</span>
+<span class="fc" id="L28">    val refreshing = MutableLiveData&lt;Boolean&gt;().apply { value = false }</span>
+<span class="fc" id="L29">    val shouldPopErrorSnackbar = MutableLiveData&lt;Boolean&gt;().apply { value = false }</span>
+
+<span class="fc" id="L31">    private val disposables = CompositeDisposable()</span>
+
+    fun refreshingRoute() {
+<span class="fc" id="L34">        shouldPopErrorSnackbar.value = false</span>
+<span class="fc" id="L35">        refreshing.value = true</span>
+<span class="fc" id="L36">        disposables += getSouthComingTrams.get()</span>
+<span class="fc" id="L37">            .zipWith(getNorthComingTrams.get())</span>
+<span class="fc" id="L38">            .subscribeBy(</span>
+<span class="fc" id="L39">                onSuccess = {</span>
+<span class="fc" id="L40">                    tramsWithDirection.value = mapOf(</span>
+<span class="fc" id="L41">                        RouteHeader(Direction.South, routeId) to it.first,</span>
+<span class="fc" id="L42">                        RouteHeader(Direction.North, routeId) to it.second</span>
+                    )
+<span class="fc" id="L44">                    lastUpdatedDateTime.value = Date(clock.currentTimeMillis)</span>
+<span class="fc" id="L45">                    refreshing.value = false</span>
+<span class="fc" id="L46">                },</span>
+<span class="fc" id="L47">                onError = {</span>
+<span class="fc" id="L48">                    refreshing.value = false</span>
+<span class="fc" id="L49">                    shouldPopErrorSnackbar.value = true</span>
+<span class="fc" id="L50">                }</span>
+            )
+<span class="fc" id="L52">    }</span>
+
+    override fun onCleared() {
+<span class="fc" id="L55">        super.onCleared()</span>
+<span class="fc" id="L56">        disposables.dispose()</span>
+<span class="fc" id="L57">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

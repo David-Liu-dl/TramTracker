@@ -1,0 +1,23 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+app,au.com.realestate.hometime.timetable,TimetableActivity.viewModel.new Function0() {...},0,9,0,0,0,1,0,1,0,1
+app,au.com.realestate.hometime.timetable,TimetableActivity.latestComingTramFragmentProvider.new Function0() {...},0,3,0,0,0,1,0,1,0,1
+app,au.com.realestate.hometime.timetable,TimetableActivity.onCreate.new Observer() {...},13,19,1,1,1,4,1,1,0,1
+app,au.com.realestate.hometime.timetable,TimetableViewModel,0,25,0,0,0,3,0,2,0,2
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteRecyclerViewAdapter.ViewType.Item,0,11,0,0,0,1,0,2,0,2
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteRecyclerViewAdapter,26,233,4,12,1,37,5,11,1,6
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragmentViewModel.refreshingRoute.new Function1() {...},0,52,0,0,0,6,0,1,0,1
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragmentViewModel.refreshingRoute.new Function1() {...},0,16,0,0,0,3,0,1,0,1
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteRecyclerViewAdapter.ViewType.Header,0,11,0,0,0,1,0,2,0,2
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.onViewCreated.new Observer() {...},0,49,0,2,0,9,0,2,0,1
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.onViewCreated.new Observer() {...},0,9,0,0,0,2,0,1,0,1
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.onSwipeRefreshListener.new SwipeRefreshLayout.OnRefreshListener() {...},5,0,0,0,2,0,1,0,1,0
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.onViewCreated.new Observer() {...},60,21,9,3,10,4,6,1,0,1
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.onViewCreated.new Observer() {...},0,10,0,0,0,2,0,1,0,1
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.retryCallback.new View.OnClickListener() {...},5,0,0,0,2,0,1,0,1,0
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragmentViewModel,0,147,0,0,0,18,0,7,0,7
+app,au.com.realestate.hometime.timetable.latestcomingroute,LatestRouteFragment.Companion,0,6,0,0,0,2,0,2,0,2
+app,au.com.realestate.hometime.common.uimodels,RouteHeader,3,15,0,0,0,1,1,2,1,2
+app,au.com.realestate.hometime.common.viewholders,RouteHeaderViewHolder,11,61,1,3,1,9,3,3,2,2
+app,au.com.realestate.hometime.common.viewholders,RouteItemViewHolder,49,89,1,1,5,10,9,2,8,2
+app,au.com.realestate.hometime.common,RouteComparator,0,19,0,0,0,2,0,2,0,2
+app,au.com.realestate.hometime.common,RouteDirectionComparator,0,21,0,0,0,2,0,2,0,2

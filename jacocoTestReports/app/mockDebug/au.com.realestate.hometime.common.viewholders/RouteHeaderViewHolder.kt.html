@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RouteHeaderViewHolder.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">au.com.realestate.hometime.common.viewholders</a> &gt; <span class="el_source">RouteHeaderViewHolder.kt</span></div><h1>RouteHeaderViewHolder.kt</h1><pre class="source lang-java linenums">package au.com.realestate.hometime.common.viewholders
+
+import android.view.View
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import au.com.realestate.domain.route.model.Direction
+import au.com.realestate.hometime.R
+import au.com.realestate.hometime.common.uimodels.RouteHeader
+import butterknife.BindView
+import butterknife.ButterKnife
+
+<span class="fc" id="L12">class RouteHeaderViewHolder(view: View) : RecyclerView.ViewHolder(view) {</span>
+
+    @BindView(R.id.direction_text_view)
+<span class="nc" id="L15">    lateinit var directionTextView: TextView</span>
+
+    init {
+<span class="fc" id="L18">        ButterKnife.bind(this, itemView)</span>
+<span class="fc" id="L19">        itemView.tag = this</span>
+    }
+
+    fun bind(routeHeader: RouteHeader) {
+<span class="fc" id="L23">        when (routeHeader.direction) {</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">            Direction.North -&gt; {</span>
+<span class="fc" id="L25">                directionTextView.text = itemView.context.getString(R.string.label_direction_north)</span>
+            }
+<span class="pc bpc" id="L27" title="1 of 2 branches missed.">            Direction.South -&gt; {</span>
+<span class="fc" id="L28">                directionTextView.text = itemView.context.getString(R.string.label_direction_south)</span>
+            }
+        }
+<span class="fc" id="L31">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

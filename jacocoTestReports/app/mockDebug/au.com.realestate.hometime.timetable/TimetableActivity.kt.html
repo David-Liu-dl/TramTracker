@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TimetableActivity.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">au.com.realestate.hometime.timetable</a> &gt; <span class="el_source">TimetableActivity.kt</span></div><h1>TimetableActivity.kt</h1><pre class="source lang-java linenums">package au.com.realestate.hometime.timetable
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.commitNow
+import androidx.lifecycle.Observer
+import au.com.realestate.hometime.R
+import au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragment
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
+
+class TimetableActivity : AppCompatActivity() {
+
+    private val viewModel by viewModel&lt;TimetableViewModel&gt;(
+<span class="fc" id="L16">        parameters = { parametersOf(LatestRouteFragment.TAG) }</span>
+    )
+
+    private val latestComingTramFragmentProvider: () -&gt; LatestRouteFragment = {
+<span class="fc" id="L20">        LatestRouteFragment.newInstance()</span>
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_timetable)
+        viewModel.currentFragmentTag.observe(this, Observer { tag: String -&gt;
+<span class="fc" id="L27">            when (tag) {</span>
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">                LatestRouteFragment.TAG -&gt; {</span>
+<span class="fc" id="L29">                    showNewScreen(latestComingTramFragmentProvider, tag)</span>
+                }
+                else -&gt; {
+<span class="nc" id="L32">                    throw RuntimeException(&quot;NoSuchFragment $tag&quot;)</span>
+                }
+            }
+<span class="fc" id="L35">        })</span>
+    }
+
+    /**
+     * Create a new fragment instance and add to the fragment stack
+     * if fragment to create either doesn't exist in fragment stack or is not added to the fragment stack
+     * We do this to make sure fragment's viewModel is retained on config change,
+     * but destroyed as a result of state changes in the parent activity.
+     */
+    private fun showNewScreen(fragmentProvider: () -&gt; Fragment, tag: String) {
+        val existingFragment = supportFragmentManager.findFragmentByTag(tag)
+        if (existingFragment == null || !existingFragment.isAdded) {
+            supportFragmentManager.commitNow {
+                replace(R.id.screen_container, fragmentProvider.invoke(), tag)
+            }
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
