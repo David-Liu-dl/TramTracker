@@ -30,10 +30,6 @@ class LatestRouteFragmentViewModel(
 
     private val disposables = CompositeDisposable()
 
-    init {
-        refreshingRoute()
-    }
-
     fun refreshingRoute() {
         shouldPopErrorSnackbar.value = false
         refreshing.value = true

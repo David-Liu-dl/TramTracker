@@ -71,6 +71,8 @@ class LatestRouteFragment : Fragment() {
             setColorSchemeResources(R.color.colorSecondary)
         }
 
+        viewModel.refreshingRoute()
+
         return view
     }
 
@@ -116,6 +118,7 @@ class LatestRouteFragment : Fragment() {
         viewModel.refreshing.observe(this, Observer { refreshing ->
             swipeRefreshLayout.isRefreshing = refreshing
         })
+
     }
 
     override fun onDestroyView() {
