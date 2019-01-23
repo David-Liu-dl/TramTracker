@@ -24,10 +24,6 @@ import java.util.*
 
 class LatestRouteFragment : Fragment() {
 
-    private val viewModel by viewModel<LatestRouteFragmentViewModel>()
-
-    private val dateFormat = SimpleDateFormat("h:mm a", Locale.getDefault())
-
     companion object {
         val TAG: String = LatestRouteFragment::class.java.simpleName
 
@@ -35,6 +31,10 @@ class LatestRouteFragment : Fragment() {
             return LatestRouteFragment()
         }
     }
+
+    private val viewModel by viewModel<LatestRouteFragmentViewModel>()
+
+    private val dateFormat = SimpleDateFormat("h:mm a", Locale.getDefault())
 
     @BindView(R.id.root_view)
     lateinit var rootView: ViewGroup

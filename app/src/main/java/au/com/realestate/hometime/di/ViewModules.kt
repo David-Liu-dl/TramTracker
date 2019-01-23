@@ -14,8 +14,7 @@ val viewModules = listOf(
     module {
         viewModel {
             LatestRouteFragmentViewModel(
-                getSouthComingTrams = get(),
-                getNorthComingTrams = get(),
+                getComingTrams = get(),
                 clock = get()
             )
         }

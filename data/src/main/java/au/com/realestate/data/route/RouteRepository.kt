@@ -22,46 +22,25 @@ class RouteRepositoryImpl(
     private val cid = "2"
     private val devInfo = "HomeTimeAndroid"
 
-    override fun getNorthComingTrams(): Single<List<Route>> {
+    override fun getComingTrams(direction: Direction): Single<List<Route>> {
         return getToken().flatMap { tkn ->
             tramService.getNextPredictedRoutesCollection(
-                Direction.North.getId(), tramId, hideResponseObject, aid, cid, tkn
+                direction.getId(), tramId, hideResponseObject, aid, cid, tkn
             )
                 .map {
                     httpErrorDefiner.defineHttpException(it)
                 }
-                .flatMap {
-                    Single.just(it.responseObject!!.map { routeResponse ->
-                        Route(
-                            routeResponse.hasSpecialEvent,
-                            routeResponse.routeNo,
-                            routeResponse.destination,
-                            routeResponse.predictedArrivalDateTime,
-                            routeResponse.specialEventMessage
-                        )
-                    })
-                }
-        }
-    }
-
-    override fun getSouthComingTrams(): Single<List<Route>> {
-        return getToken().flatMap { tkn ->
-            tramService.getNextPredictedRoutesCollection(
-                Direction.South.getId(), tramId, hideResponseObject, aid, cid, tkn
-            )
                 .map {
-                    httpErrorDefiner.defineHttpException(it)
-                }
-                .flatMap {
-                    Single.just(it.responseObject!!.map { routeResponse ->
-                        Route(
-                            routeResponse.hasSpecialEvent,
-                            routeResponse.routeNo,
-                            routeResponse.destination,
-                            routeResponse.predictedArrivalDateTime,
-                            routeResponse.specialEventMessage
-                        )
-                    })
+                    requireNotNull(it.responseObject)
+                        .map { routeResponse ->
+                            Route(
+                                routeResponse.hasSpecialEvent,
+                                routeResponse.routeNo,
+                                routeResponse.destination,
+                                routeResponse.predictedArrivalDateTime,
+                                routeResponse.specialEventMessage
+                            )
+                        }
                 }
         }
     }
@@ -76,10 +55,10 @@ class RouteRepositoryImpl(
                 httpErrorDefiner.defineHttpException(it)
             }
             .map {
-                val authDeviceToken = it.responseObject!![0].deviceToken
-
-                this.cachedAuthDeviceToken = Maybe.just(authDeviceToken)
-                it.responseObject!![0].deviceToken
+                requireNotNull(it.responseObject)[0].deviceToken
+            }
+            .doOnSuccess {
+                this.cachedAuthDeviceToken = Maybe.just(it)
             }
     }
 }

@@ -3,8 +3,7 @@ package au.com.realestate.hometime.timetable.latestcomingroute
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import au.com.realestate.domain.route.model.Direction
 import au.com.realestate.domain.route.model.Route
-import au.com.realestate.domain.route.usecase.GetNorthComingTrams
-import au.com.realestate.domain.route.usecase.GetSouthComingTrams
+import au.com.realestate.domain.route.usecase.GetComingTrams
 import au.com.realestate.hometime.common.uimodels.RouteHeader
 import au.com.realestate.infra.util.Clock
 import io.mockk.every
@@ -21,8 +20,7 @@ class LatestRouteFragmentViewModelTest{
     @get:Rule
     val instantTaskExecutorRule = InstantTaskExecutorRule()
 
-    private val getSouthComingTrams = mockk<GetSouthComingTrams>()
-    private val getNorthComingTrams = mockk<GetNorthComingTrams>()
+    private val getComingTrams = mockk<GetComingTrams>()
     private val clock = mockk<Clock>()
 
     private val dummyNorthRoutes = listOf(
@@ -52,7 +50,7 @@ class LatestRouteFragmentViewModelTest{
 
     @Test
     fun `should has correct initial states when created`(){
-        val viewModel = LatestRouteFragmentViewModel(getSouthComingTrams, getNorthComingTrams, clock)
+        val viewModel = LatestRouteFragmentViewModel(getComingTrams, clock)
 
         viewModel.tramsWithDirection.value.shouldEqual(emptyMap())
         viewModel.lastUpdatedDateTime.value.shouldEqual(null)
@@ -62,10 +60,9 @@ class LatestRouteFragmentViewModelTest{
 
     @Test
     fun `should has correct states when refreshing`(){
-        every { getSouthComingTrams.get() } returns Single.never()
-        every { getNorthComingTrams.get() } returns Single.never()
+        every { getComingTrams.get(any()) } returns Single.never()
 
-        val viewModel = LatestRouteFragmentViewModel(getSouthComingTrams, getNorthComingTrams, clock)
+        val viewModel = LatestRouteFragmentViewModel(getComingTrams, clock)
 
         viewModel.refreshingRoute()
 
@@ -79,11 +76,10 @@ class LatestRouteFragmentViewModelTest{
     fun `should has correct states when refresh finished`(){
         val instantTime = Instant.now().toEpochMilli()
 
-        every { getSouthComingTrams.get() } returns Single.just(dummySouthRoutes)
-        every { getNorthComingTrams.get() } returns Single.just(dummyNorthRoutes)
+        every { getComingTrams.get(any()) }.returnsMany(Single.just(dummyNorthRoutes), Single.just(dummySouthRoutes))
         every { clock.currentTimeMillis } returns instantTime
 
-        val viewModel = LatestRouteFragmentViewModel(getSouthComingTrams, getNorthComingTrams, clock)
+        val viewModel = LatestRouteFragmentViewModel(getComingTrams, clock)
 
         viewModel.refreshingRoute()
 
@@ -95,11 +91,9 @@ class LatestRouteFragmentViewModelTest{
 
     @Test
     fun `should has correct states when error on refreshing`(){
+        every { getComingTrams.get(any()) } returns Single.error(Exception())
 
-        every { getSouthComingTrams.get() } returns Single.error(Exception())
-        every { getNorthComingTrams.get() } returns Single.error(Exception())
-
-        val viewModel = LatestRouteFragmentViewModel(getSouthComingTrams, getNorthComingTrams, clock)
+        val viewModel = LatestRouteFragmentViewModel(getComingTrams, clock)
 
         viewModel.refreshingRoute()
 

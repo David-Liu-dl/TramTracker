@@ -4,22 +4,19 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import au.com.realestate.domain.route.model.Direction
 import au.com.realestate.domain.route.model.Route
-import au.com.realestate.domain.route.usecase.GetNorthComingTrams
-import au.com.realestate.domain.route.usecase.GetSouthComingTrams
+import au.com.realestate.domain.route.usecase.GetComingTrams
 import au.com.realestate.hometime.common.uimodels.RouteHeader
 import au.com.realestate.infra.util.Clock
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.rxkotlin.zipWith
-import java.time.LocalDateTime
 import java.util.*
 
 const val routeId = 78
 
 class LatestRouteFragmentViewModel(
-    private val getSouthComingTrams: GetSouthComingTrams,
-    private val getNorthComingTrams: GetNorthComingTrams,
+    private val getComingTrams: GetComingTrams,
     private val clock: Clock
 ) : ViewModel() {
 
@@ -33,13 +30,13 @@ class LatestRouteFragmentViewModel(
     fun refreshingRoute() {
         shouldPopErrorSnackbar.value = false
         refreshing.value = true
-        disposables += getSouthComingTrams.get()
-            .zipWith(getNorthComingTrams.get())
+        disposables += getComingTrams.get(GetComingTrams.Params(Direction.North))
+            .zipWith(getComingTrams.get(GetComingTrams.Params(Direction.South)))
             .subscribeBy(
                 onSuccess = {
                     tramsWithDirection.value = mapOf(
-                        RouteHeader(Direction.South, routeId) to it.first,
-                        RouteHeader(Direction.North, routeId) to it.second
+                        RouteHeader(Direction.North, routeId) to it.first,
+                        RouteHeader(Direction.South, routeId) to it.second
                     )
                     lastUpdatedDateTime.value = Date(clock.currentTimeMillis)
                     refreshing.value = false
