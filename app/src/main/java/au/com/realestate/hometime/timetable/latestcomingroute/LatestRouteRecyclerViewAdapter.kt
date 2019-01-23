@@ -8,7 +8,7 @@ import au.com.realestate.hometime.R
 import au.com.realestate.hometime.common.uimodels.RouteHeader
 import au.com.realestate.hometime.common.viewholders.RouteHeaderViewHolder
 import au.com.realestate.hometime.common.viewholders.RouteItemViewHolder
-import java.util.*
+import kotlin.Comparator
 
 class LatestRouteRecyclerViewAdapter(
     private val routeHeaderComparator: Comparator<RouteHeader>,
@@ -23,20 +23,7 @@ class LatestRouteRecyclerViewAdapter(
     var headerWithRoutesMap: Map<RouteHeader, List<Route>> = emptyMap()
         set(value) {
             field = value
-            val sortedMap = value.toSortedMap(routeHeaderComparator)
-            typeViews = sortedMap
-                .map { map ->
-                    map.value
-                        .sortedWith(routeComparator)
-                        .map { item -> Pair<ViewType, Any>(ViewType.Item, item) }
-                        .toMutableList()
-                        .apply {
-                            // insert routeHeader to the beginning
-                            add(0, Pair(ViewType.Header, map.key))
-                        }
-                }
-                .flatten()
-
+            typeViews = getSortedTypeViewsByHeaderWithRoutesMap(value, routeHeaderComparator, routeComparator)
             notifyDataSetChanged()
         }
 
@@ -71,5 +58,24 @@ class LatestRouteRecyclerViewAdapter(
             is ViewType.Header -> R.layout.header_route
             is ViewType.Item -> R.layout.item_route
         }
+    }
+
+    private fun getSortedTypeViewsByHeaderWithRoutesMap(
+        headerWithRoutesMap: Map<RouteHeader, List<Route>>,
+        routeHeaderComparator: Comparator<RouteHeader>,
+        routeComparator: Comparator<Route>
+    ): List<Pair<ViewType, Any>> {
+        return headerWithRoutesMap.toSortedMap(routeHeaderComparator)
+            .map { headerWithRoutes ->
+                headerWithRoutes.value
+                    .sortedWith(routeComparator)
+                    .map { item -> Pair<ViewType, Any>(ViewType.Item, item) }
+                    .toMutableList()
+                    .apply {
+                        // insert routeHeader to the beginning
+                        add(0, Pair(ViewType.Header, headerWithRoutes.key))
+                    }
+            }
+            .flatten()
     }
 }

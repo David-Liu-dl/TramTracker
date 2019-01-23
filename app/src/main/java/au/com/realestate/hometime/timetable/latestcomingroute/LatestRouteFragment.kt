@@ -118,7 +118,6 @@ class LatestRouteFragment : Fragment() {
         viewModel.refreshing.observe(this, Observer { refreshing ->
             swipeRefreshLayout.isRefreshing = refreshing
         })
-
     }
 
     override fun onDestroyView() {
