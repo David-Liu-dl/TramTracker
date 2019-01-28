@@ -9,8 +9,8 @@ class TimetableViewModel(
 ): ViewModel(){
     val fragmentNavigator = MutableLiveData<Navigation>().apply { value = initialNavigation }
 
-    fun navigateToRouteDetailFragmentByTag(selectedVehicleId: Int){
-        fragmentNavigator.value = Navigation(RouteDetailFragment.TAG, RouteDetailFragmentParam(selectedVehicleId))
+    fun navigateToRouteDetailFragment(routeDetailFragmentParam: RouteDetailFragmentParam){
+        fragmentNavigator.value = Navigation(RouteDetailFragment.TAG, routeDetailFragmentParam)
     }
 
 }

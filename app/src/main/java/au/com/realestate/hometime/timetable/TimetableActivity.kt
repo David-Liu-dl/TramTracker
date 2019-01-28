@@ -27,7 +27,7 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
             ?.let {
                 RouteDetailFragment.newInstance(it.selectedVehicleId)
             }
-            ?: let{
+            ?: let {
                 throw ClassCastException("$params cannot be casted to RouteDetailFragmentParam")
             }
     }
@@ -54,7 +54,7 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
     }
 
     override fun navigateToRouteDetailFragment(vehicleId: Int) {
-        viewModel.navigateToRouteDetailFragmentByTag(vehicleId)
+        viewModel.navigateToRouteDetailFragment(RouteDetailFragmentParam(vehicleId))
     }
 
     /**
@@ -65,9 +65,21 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
      */
     private fun showNewScreen(fragmentProvider: (params: Params?) -> Fragment, params: Params? = null, tag: String) {
         val existingFragment = supportFragmentManager.findFragmentByTag(tag)
+        val fragments = supportFragmentManager.fragments
+
         if (existingFragment == null || !existingFragment.isAdded) {
-            supportFragmentManager.commitNow {
-                replace(R.id.screen_container, fragmentProvider.invoke(params), tag)
+            if (fragments.isEmpty()) {
+                supportFragmentManager.commitNow {
+                    replace(R.id.screen_container, fragmentProvider.invoke(params), tag)
+                }
+            } else {
+                supportFragmentManager
+                    .beginTransaction()
+                    .apply {
+                        addToBackStack(tag)
+                        replace(R.id.screen_container, fragmentProvider.invoke(params), tag)
+                    }
+                    .commit()
             }
         }
     }
