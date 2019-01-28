@@ -5,13 +5,23 @@ import au.com.realestate.remote.auth.dto.DeviceTokenResponse
 import au.com.realestate.remote.tram.dto.RouteResponse
 
 object FakeGetNextPredictedRoutesCollectionResponse {
-    private val routeResponse = RouteResponse(
+    private val routeResponse1 = RouteResponse(
         type = "NextPredictedRoutesCollectionInfo",
         hasSpecialEvent = true,
         routeNo = 78,
         destination = "North Richmond",
         predictedArrivalDateTime = "/Date(1547859660000+1100)/",
-        specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges"
+        specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges",
+        vehicleId = 280
+        )
+    private val routeResponse2 = RouteResponse(
+        type = "NextPredictedRoutesCollectionInfo",
+        hasSpecialEvent = true,
+        routeNo = 78,
+        destination = "North Richmond",
+        predictedArrivalDateTime = "/Date(1547859660000+1100)/",
+        specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges",
+        vehicleId = 281
     )
 
     val httpRouteResponse
@@ -19,7 +29,7 @@ object FakeGetNextPredictedRoutesCollectionResponse {
             errorMessage = null,
             hasError = false,
             hasResponse = true,
-            responseObject = listOf(routeResponse, routeResponse),
+            responseObject = listOf(routeResponse1, routeResponse2),
             timeRequested = "/Date(1547858980631+1100)/",
             timeResponded = "/Date(1547858980643+1100)/",
             webMethodCalled = "GetDeviceToken"

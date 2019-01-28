@@ -7,7 +7,8 @@ data class Route(
     val routeNo: Int,
     val destination: String,
     val predictedArrivalDateTime: String,
-    val specialEventMessage: String? = null
+    val specialEventMessage: String? = null,
+    val vehicleId: Int
 ) {
     fun getFormattedArrivalDateTime(): Date {
         val startIndex = predictedArrivalDateTime.indexOf("(") + 1

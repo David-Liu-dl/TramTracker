@@ -38,7 +38,8 @@ class RouteRepositoryImpl(
                                 routeResponse.routeNo,
                                 routeResponse.destination,
                                 routeResponse.predictedArrivalDateTime,
-                                routeResponse.specialEventMessage
+                                routeResponse.specialEventMessage,
+                                routeResponse.vehicleId
                             )
                         }
                 }

@@ -16,5 +16,7 @@ class RouteResponse(
     @Json(name = "PredictedArrivalDateTime")
     val predictedArrivalDateTime: String,
     @Json(name = "SpecialEventMessage")
-    val specialEventMessage: String? = null
+    val specialEventMessage: String? = null,
+    @Json(name = "VehicleNo")
+    val vehicleId: Int
 )
