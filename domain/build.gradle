@@ -10,6 +10,7 @@ dependencies {
 
     // rx
     implementation "io.reactivex.rxjava2:rxjava:${library.rxJava}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${library.rxKotlin}"
 
     // Koin
     implementation "org.koin:koin-core-ext:${library.koin}"

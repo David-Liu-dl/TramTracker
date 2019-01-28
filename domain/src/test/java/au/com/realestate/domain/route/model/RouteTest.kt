@@ -10,7 +10,7 @@ class RouteTest {
 
     @Test
     fun `should get correct formatted time`() {
-        val route = Route(true, 78, "HomeTime", dummyPredictedArrivalDateTime, null)
+        val route = Route(true, 78, "HomeTime", dummyPredictedArrivalDateTime, null, 200)
         val parsedDate = route.getFormattedArrivalDateTime()
 
         assertEquals(parsedDate, Date(dummyDateTimeMillisecond))

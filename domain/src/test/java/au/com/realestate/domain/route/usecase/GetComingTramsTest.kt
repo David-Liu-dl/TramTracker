@@ -19,14 +19,16 @@ class GetComingTramsTest {
             routeNo = 78,
             destination = "North Richmond",
             predictedArrivalDateTime = "/Date(1547859660000+1100)/",
-            specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges"
+            specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges",
+            vehicleId = 200
         ),
         Route(
             hasSpecialEvent = true,
             routeNo = 78,
             destination = "North Richmond",
             predictedArrivalDateTime = "/Date(1547859660000+1100)/",
-            specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges"
+            specialEventMessage = "Public event Saturday 26 January: Service changes will affect some City trams. Info: yarratrams.com.au/servicechanges",
+            vehicleId = 201
         )
     )
 

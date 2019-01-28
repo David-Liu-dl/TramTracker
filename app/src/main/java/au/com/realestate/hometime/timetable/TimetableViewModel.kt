@@ -12,7 +12,6 @@ class TimetableViewModel(
     fun navigateToRouteDetailFragment(routeDetailFragmentParam: RouteDetailFragmentParam){
         fragmentNavigator.value = Navigation(RouteDetailFragment.TAG, routeDetailFragmentParam)
     }
-
 }
 
 data class Navigation(val fragmentTag: String, val params: Params)
