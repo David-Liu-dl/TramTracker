@@ -6,15 +6,31 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b1be5b0-8e63-471a-a0a8-d3b7ea35fa24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/RouteItemViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/RouteItemViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,8 +141,9 @@
     <session id="-222835035">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
@@ -135,7 +152,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -143,14 +160,14 @@
           <entry key="Translations Editor" value="2" />
           <entry key="bat" value="1" />
           <entry key="class" value="2" />
-          <entry key="gradle" value="64" />
+          <entry key="gradle" value="65" />
           <entry key="gradlew" value="3" />
           <entry key="iml" value="1" />
           <entry key="java" value="61" />
-          <entry key="kt" value="399" />
+          <entry key="kt" value="410" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
-          <entry key="pro" value="1" />
+          <entry key="pro" value="2" />
           <entry key="properties" value="5" />
           <entry key="xml" value="50" />
         </counts>
@@ -159,32 +176,32 @@
         <counts>
           <entry key="" value="2" />
           <entry key="CLASS" value="2" />
-          <entry key="Groovy" value="64" />
+          <entry key="Groovy" value="65" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="61" />
-          <entry key="Kotlin" value="399" />
+          <entry key="Kotlin" value="410" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="ProGuard File" value="1" />
+          <entry key="ProGuard File" value="2" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="275" />
+          <entry key="gradle" value="277" />
           <entry key="java" value="2" />
-          <entry key="kt" value="15303" />
+          <entry key="kt" value="17188" />
           <entry key="properties" value="4" />
           <entry key="xml" value="1764" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="275" />
+          <entry key="Groovy" value="277" />
           <entry key="JAVA" value="2" />
-          <entry key="Kotlin" value="15303" />
+          <entry key="Kotlin" value="17188" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="1764" />
         </counts>
@@ -197,24 +214,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/HomeTimeAppModule.kt">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/e49742d3259938ea3539346c8ca3babb54a5140f/kotlin-stdlib-common-1.3.11-sources.jar!/kotlin/util/Standard.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#39#472#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2760">
+              <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="14" column="45" selection-start-line="13" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="-665">
+              <caret line="27" selection-start-line="27" selection-end-line="34" selection-end-column="15" />
               <folding>
-                <element signature="e#46#449#0" expanded="true" />
+                <element signature="e#46#562#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,74 +237,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+            <state relative-caret-position="360">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
               <folding>
-                <element signature="e#43#109#0" expanded="true" />
+                <element signature="e#46#200#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/RouteNavigationHandler.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="44" selection-start-column="44" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/RouteItemViewHolder.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#1131#1195#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/routedetails/RouteDetailFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-632">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-viewmodel/1.0.2/ae74c4c1bf8d4b2fb64a9d3e12eb87b13eb0e5e6/koin-androidx-viewmodel-1.0.2-sources.jar!/org/koin/androidx/viewmodel/ext/android/LifecycleOwnerExt.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/di/MockApiModule.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/auth/api/MockAuthService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="150">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <element signature="e#39#413#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -303,8 +323,8 @@
         <option value="Gradle Kotlin DSL Build Script" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Kotlin File" />
         <option value="JUnit4 Test Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -11763,10 +11783,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/HttpErrorInterceptor.kt" />
-        <option value="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/HttpErrorDefiner.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/HttpExceptionDefiner.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/api/TramService.kt" />
         <option value="$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/di/DataModule.kt" />
@@ -11784,16 +11800,13 @@
         <option value="$PROJECT_DIR$/data/src/test/java/au/com/realestate/data/HttpExceptionDefinerTest.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentTest.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteScreenRobot.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteScreenTest.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/di/TestDomainModule.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/di/TestHomeTimeAppModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/TimetableViewModelTest.kt" />
         <option value="$PROJECT_DIR$/gradle/jacocoPlugin.gradle" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/HttpResponse.kt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/TimberDebugTree.kt" />
         <option value="$PROJECT_DIR$/library/core-infra/src/main/java/au/com/realestate/infra/domain/SingleUseCase.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/usecase/GetNorthComingTrams.kt" />
@@ -11801,19 +11814,26 @@
         <option value="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/repository/RouteRepository.kt" />
         <option value="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/di/DomainModule.kt" />
         <option value="$PROJECT_DIR$/domain/src/test/java/au/com/realestate/domain/route/usecase/GetComingTramsTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModelTest.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/api/MockTramService.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/HomeTimeAppModule.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/di/MockApiModule.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt" />
         <option value="$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt" />
-        <option value="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt" />
         <option value="$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/routedetails/RouteDetailViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/RouteItemViewHolder.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/RouteNavigationHandler.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/routedetails/RouteDetailFragment.kt" />
       </list>
     </option>
   </component>
@@ -11831,7 +11851,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -11842,102 +11862,130 @@
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="au" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="au" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="au" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="realestate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="au" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="au" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="hometime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="au" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="realestate" type="462c0819:PsiDirectoryNode" />
+              <item name="hometime" type="462c0819:PsiDirectoryNode" />
               <item name="di" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
               <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="au" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="realestate" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
+              <item name="hometime" type="462c0819:PsiDirectoryNode" />
+              <item name="timetable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="au" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="realestate" type="462c0819:PsiDirectoryNode" />
+              <item name="hometime" type="462c0819:PsiDirectoryNode" />
+              <item name="timetable" type="462c0819:PsiDirectoryNode" />
+              <item name="latestcomingroute" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Problem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Problem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="au" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="realestate" type="462c0819:PsiDirectoryNode" />
+              <item name="hometime" type="462c0819:PsiDirectoryNode" />
+              <item name="timetable" type="462c0819:PsiDirectoryNode" />
+              <item name="routedetails" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -12028,7 +12076,7 @@
     <property name="DEBUGGABLE_PROCESS" value="au.com.realestate.hometime.mock" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="response&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt&#10;routerep&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/domain/src/main/java/au/com/realestate/domain/route/repository/RouteRepository.kt&#10;robo&#9;null&#9;null&#10;timea&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt&#10;fragment&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;reposii&#9;null&#9;null&#10;latestvie&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;latesfra&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt&#10;httpex&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/main/java/au/com/realestate/data/HttpExceptionDefiner.kt&#10;http&#9;null&#9;null&#10;httpres&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/HttpResponse.kt&#10;domain&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/domain/src/main/java/au/com/realestate/domain/di/DomainModule.kt&#10;dom&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/domain/src/main/java/au/com/realestate/domain/di/DomainModule.kt&#10;reposte&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt&#10;routes&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt&#10;test&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt&#10;fake&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt&#10;auths&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/auth/api/AuthService.kt&#10;tram&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/api/TramService.kt&#10;ROUTERE&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt&#10;latestv&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;frag&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;latestfra&#9;null&#9;null&#10;appmo&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/di/HomeTimeAppModule.kt&#10;lates&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingtram/LatestTramFragment.kt&#10;route&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt&#10;apicon&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/main/java/au/com/realestate/data/ApiConfigsImpl.kt&#10;rout&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt&#10;home&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/HomeTimeApp.kt&#10;ho&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/HomeTimeApp.kt&#10;AndroidSchedulerProvider&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/library/core-infra-android/src/main/java/au/com/realestate/infra/android/rx/AndroidSchedulerProvider.kt" />
+    <property name="SearchEverywhereHistoryKey" value="time&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt&#10;response&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt&#10;routerep&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/domain/src/main/java/au/com/realestate/domain/route/repository/RouteRepository.kt&#10;robo&#9;null&#9;null&#10;timea&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt&#10;fragment&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;reposii&#9;null&#9;null&#10;latestvie&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;latesfra&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt&#10;httpex&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/main/java/au/com/realestate/data/HttpExceptionDefiner.kt&#10;http&#9;null&#9;null&#10;httpres&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/HttpResponse.kt&#10;domain&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/domain/src/main/java/au/com/realestate/domain/di/DomainModule.kt&#10;dom&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/domain/src/main/java/au/com/realestate/domain/di/DomainModule.kt&#10;reposte&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt&#10;routes&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt&#10;test&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt&#10;fake&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt&#10;auths&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/auth/api/AuthService.kt&#10;tram&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/api/TramService.kt&#10;ROUTERE&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt&#10;latestv&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;frag&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt&#10;latestfra&#9;null&#9;null&#10;appmo&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/di/HomeTimeAppModule.kt&#10;lates&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingtram/LatestTramFragment.kt&#10;route&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt&#10;apicon&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/data/src/main/java/au/com/realestate/data/ApiConfigsImpl.kt&#10;rout&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt&#10;home&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/HomeTimeApp.kt&#10;ho&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/app/src/main/java/au/com/realestate/hometime/HomeTimeApp.kt&#10;AndroidSchedulerProvider&#9;FILE&#9;file:///Users/yuhaoliu/Documents/Kotlin Space/hometime-android-master/Problem/library/core-infra-android/src/main/java/au/com/realestate/infra/android/rx/AndroidSchedulerProvider.kt" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -12360,24 +12408,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-376" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.90678823" visible="true" weight="0.118743345" />
-      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Captures" order="0" sideWeight="0.35744682" side_tool="true" weight="0.22257721" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.6416862" visible="true" weight="0.22257721" />
+      <window_info id="Structure" order="2" sideWeight="0.35744682" side_tool="true" weight="0.22257721" />
       <window_info id="Favorites" order="3" sideWeight="0.09274194" side_tool="true" weight="0.20447284" />
-      <window_info id="Build Variants" order="4" sideWeight="0.13895217" side_tool="true" weight="0.24707136" />
+      <window_info id="Build Variants" order="4" sideWeight="0.35831383" side_tool="true" visible="true" weight="0.22257721" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.85835993" weight="0.2462006" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.9078807" weight="0.22593719" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.9078807" weight="0.2857143" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32908705" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840257" weight="0.37367302" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49840257" visible="true" weight="0.13475177" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32908705" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50159746" side_tool="true" weight="0.32928064" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32908705" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.90841323" weight="0.18034448" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.90841323" weight="0.28267476" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49893504" weight="0.14893617" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -12426,56 +12473,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt</url>
-          <line>128</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/routedetails/RouteDetailFragment.kt</url>
+          <line>34</line>
           <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/auth/dto/DeviceTokenResponse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/TimberLogger.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/HomeTimeApp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/application/TimberDebugTree.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/test/java/au/com/realestate/data/route/RouteRepositoryTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="63" column="9" selection-start-line="57" selection-start-column="8" selection-end-line="63" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/core-infra/src/main/java/au/com/realestate/infra/domain/UseCaseParams.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -12512,13 +12518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/usecase/GetComingTrams.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -12530,9 +12529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-          <folding>
-            <element signature="e#64#667#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -12572,17 +12568,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragmentViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#64#599#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -12600,24 +12592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/RouteItemViewHolder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/Comparators.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -12671,13 +12649,6 @@
     <entry file="file://$PROJECT_DIR$/remote-api/remote-api-mock/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4530">
-          <caret line="151" selection-start-line="140" selection-start-column="72" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/au/com/realestate/hometime/timetable/TimetableRobot.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -12685,27 +12656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/e49742d3259938ea3539346c8ca3babb54a5140f/kotlin-stdlib-common-1.3.11-sources.jar!/kotlin/util/Standard.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/HomeTimeAppModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#39#472#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -12723,23 +12677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="14" column="45" selection-start-line="13" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#46#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/repository/RouteRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -12750,31 +12687,137 @@
     <entry file="file://$PROJECT_DIR$/remote-api/remote-api-mock/src/main/java/au/com/realestate/remote/mock/tram/FakeGetNextPredictedRoutesCollectionResponse.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/remote-api/remote-api-base/src/main/java/au/com/realestate/remote/tram/dto/RouteResponse.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
-          <folding>
-            <element signature="e#43#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/au/com/realestate/data/route/RouteRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/HomeTimeAppModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#39#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/au/com/realestate/domain/route/model/Route.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/routedetails/RouteDetailViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.11/e49742d3259938ea3539346c8ca3babb54a5140f/kotlin-stdlib-common-1.3.11-sources.jar!/kotlin/util/Standard.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/RouteNavigationHandler.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteRecyclerViewAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-viewmodel/1.0.2/ae74c4c1bf8d4b2fb64a9d3e12eb87b13eb0e5e6/koin-androidx-viewmodel-1.0.2-sources.jar!/org/koin/androidx/viewmodel/ext/android/LifecycleOwnerExt.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/di/ViewModules.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#39#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/common/viewholders/RouteItemViewHolder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#1131#1195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/latestcomingroute/LatestRouteFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding>
+            <element signature="e#46#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/routedetails/RouteDetailFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/au/com/realestate/hometime/timetable/TimetableActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="27" selection-start-line="27" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <element signature="e#46#562#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

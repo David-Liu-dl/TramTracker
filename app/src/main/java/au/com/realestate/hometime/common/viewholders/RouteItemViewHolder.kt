@@ -28,7 +28,12 @@ class RouteItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         itemView.tag = this
     }
 
-    fun bind(item: Route) {
+    fun bind(item: Route, routeClickCallback: (selectedVehicleId: Int) -> Unit) {
+        itemView.apply {
+            setOnClickListener {
+                routeClickCallback(item.vehicleId)
+            }
+        }
         tramIdTextView.text = itemView.context.getString(R.string.label_tram_id, item.routeNo)
         directionTextView.text = item.destination
         timeRemainTextView.text = itemView.context.getString(R.string.label_time_remain, item.getFormattedArrivalDateTime().diffWithCurrentTimeInMinutes())

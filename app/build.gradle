@@ -27,6 +27,10 @@ android {
         resValue 'string', 'app_name', "HomeTime"
     }
 
+    androidExtensions {
+        experimental = true
+    }
+
     packagingOptions {
         exclude 'kotlin/**'
         exclude '**/*.kotlin_metadata'

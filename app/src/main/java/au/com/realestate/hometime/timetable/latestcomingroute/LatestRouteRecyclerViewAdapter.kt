@@ -12,7 +12,8 @@ import kotlin.Comparator
 
 class LatestRouteRecyclerViewAdapter(
     private val routeHeaderComparator: Comparator<RouteHeader>,
-    private val routeComparator: Comparator<Route>
+    private val routeComparator: Comparator<Route>,
+    private val routeClickCallback: (selectedVehicleId: Int) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private sealed class ViewType {
@@ -48,7 +49,7 @@ class LatestRouteRecyclerViewAdapter(
                 (holder as RouteHeaderViewHolder).bind(typeViews[position].second as RouteHeader)
             }
             R.layout.item_route -> {
-                (holder as RouteItemViewHolder).bind(typeViews[position].second as Route)
+                (holder as RouteItemViewHolder).bind(typeViews[position].second as Route, routeClickCallback)
             }
         }
     }

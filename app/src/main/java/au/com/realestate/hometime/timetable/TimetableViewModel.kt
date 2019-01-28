@@ -2,11 +2,23 @@ package au.com.realestate.hometime.timetable
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import au.com.realestate.hometime.timetable.routedetails.RouteDetailFragment
 
 class TimetableViewModel(
-    initialFragmentTag: String
+    initialNavigation: Navigation
 ): ViewModel(){
+    val fragmentNavigator = MutableLiveData<Navigation>().apply { value = initialNavigation }
 
-    val currentFragmentTag = MutableLiveData<String>().apply { value = initialFragmentTag }
+    fun navigateToRouteDetailFragmentByTag(selectedVehicleId: Int){
+        fragmentNavigator.value = Navigation(RouteDetailFragment.TAG, RouteDetailFragmentParam(selectedVehicleId))
+    }
 
 }
+
+data class Navigation(val fragmentTag: String, val params: Params)
+
+class RouteDetailFragmentParam(val selectedVehicleId: Int): Params()
+
+class EmptyParams: Params()
+
+open class Params

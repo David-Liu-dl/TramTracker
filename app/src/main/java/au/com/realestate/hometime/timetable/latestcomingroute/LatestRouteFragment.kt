@@ -1,5 +1,6 @@
 package au.com.realestate.hometime.timetable.latestcomingroute
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,11 +15,14 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import au.com.realestate.hometime.R
 import au.com.realestate.hometime.common.RouteComparator
 import au.com.realestate.hometime.common.RouteDirectionComparator
+import au.com.realestate.hometime.timetable.RouteNavigationHandler
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.Unbinder
 import com.google.android.material.snackbar.Snackbar
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import timber.log.Timber
+import java.lang.RuntimeException
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -35,6 +39,8 @@ class LatestRouteFragment : Fragment() {
     private val viewModel by viewModel<LatestRouteFragmentViewModel>()
 
     private val dateFormat = SimpleDateFormat("h:mm a", Locale.getDefault())
+
+    private var routeNavigationHandler: RouteNavigationHandler? = null
 
     @BindView(R.id.root_view)
     lateinit var rootView: ViewGroup
@@ -54,12 +60,17 @@ class LatestRouteFragment : Fragment() {
 
     private var errorRefreshingSnackbar: Snackbar? = null
 
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        routeNavigationHandler = context as? RouteNavigationHandler
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_latest_coming_tram, container, false)
         unbinder = ButterKnife.bind(this, view)
 
         latestTramRecyclerViewAdapter =
-                LatestRouteRecyclerViewAdapter(RouteDirectionComparator, RouteComparator)
+            LatestRouteRecyclerViewAdapter(RouteDirectionComparator, RouteComparator, routeClickCallback)
 
         recyclerView.apply {
             layoutManager = LinearLayoutManager(this@LatestRouteFragment.context)
@@ -103,7 +114,7 @@ class LatestRouteFragment : Fragment() {
                     rootView,
                     getString(R.string.error_message_could_not_refresh_routes),
                     Snackbar.LENGTH_LONG
-                ).setAction(getString(R.string.action_retry), retryCallback)
+                ).setAction(getString(R.string.action_retry), onRetryListener)
                 context?.let { notNullContext ->
                     errorRefreshingSnackbar?.let {
                         it.setActionTextColor(ContextCompat.getColor(notNullContext, R.color.colorTextLight))
@@ -125,11 +136,26 @@ class LatestRouteFragment : Fragment() {
         unbinder.unbind()
     }
 
-    private val retryCallback: View.OnClickListener = View.OnClickListener {
+    override fun onDetach() {
+        super.onDetach()
+        routeNavigationHandler = null
+    }
+
+    private val onRetryListener: View.OnClickListener = View.OnClickListener {
         viewModel.refreshingRoute()
     }
 
     private val onSwipeRefreshListener: SwipeRefreshLayout.OnRefreshListener = SwipeRefreshLayout.OnRefreshListener {
         viewModel.refreshingRoute()
+    }
+
+    private val routeClickCallback: (vehicleId: Int) -> Unit = { vehicleId ->
+        routeNavigationHandler
+            ?.run {
+                navigateToRouteDetailFragment(vehicleId)
+            }
+            ?: run {
+                throw RuntimeException("RouteNavigationHandler cannot be null")
+            }
     }
 }
