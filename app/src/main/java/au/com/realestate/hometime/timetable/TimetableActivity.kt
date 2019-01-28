@@ -35,24 +35,30 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timetable)
-        viewModel.fragmentNavigator.observe(this, Observer { navigation: Navigation ->
-            val tag = navigation.fragmentTag
-            val params = navigation.params
+        viewModel.fragmentNavigator.observe(this, Observer { navigation ->
+            navigation?.let {
+                val tag = navigation.fragmentTag
+                val params = navigation.params
 
-            when (navigation.fragmentTag) {
-                LatestRouteFragment.TAG -> {
-                    showNewScreen(latestComingTramFragmentProvider, null, tag)
-                }
-                RouteDetailFragment.TAG -> {
-                    showNewScreen(routeDetailFragmentProvider, params, tag)
-                }
-                else -> {
-                    throw RuntimeException("NoSuchFragment $tag")
+                when (navigation.fragmentTag) {
+                    LatestRouteFragment.TAG -> {
+                        showNewScreen(latestComingTramFragmentProvider, null, tag)
+                    }
+                    RouteDetailFragment.TAG -> {
+                        showNewScreen(routeDetailFragmentProvider, params, tag)
+                    }
+                    else -> {
+                        throw RuntimeException("NoSuchFragment $tag")
+                    }
                 }
             }
         })
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModel.fragmentNavigator.value = null
+    }
     override fun navigateToRouteDetailFragment(vehicleId: Int) {
         viewModel.navigateToRouteDetailFragment(RouteDetailFragmentParam(vehicleId))
     }
@@ -76,6 +82,12 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
                 supportFragmentManager
                     .beginTransaction()
                     .apply {
+                        setCustomAnimations(
+                            R.anim.slide_in_left,
+                            R.anim.slide_out_left,
+                            R.anim.slide_in_right,
+                            R.anim.slide_out_right
+                        )
                         addToBackStack(tag)
                         replace(R.id.screen_container, fragmentProvider.invoke(params), tag)
                     }

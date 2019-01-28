@@ -7,7 +7,7 @@ import au.com.realestate.hometime.timetable.routedetails.RouteDetailFragment
 class TimetableViewModel(
     initialNavigation: Navigation
 ): ViewModel(){
-    val fragmentNavigator = MutableLiveData<Navigation>().apply { value = initialNavigation }
+    val fragmentNavigator = MutableLiveData<Navigation?>().apply { value = initialNavigation }
 
     fun navigateToRouteDetailFragment(routeDetailFragmentParam: RouteDetailFragmentParam){
         fragmentNavigator.value = Navigation(RouteDetailFragment.TAG, routeDetailFragmentParam)

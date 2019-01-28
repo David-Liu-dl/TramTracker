@@ -23,7 +23,7 @@ val viewModules = listOf(
     },
     module {
         viewModel {
-            RouteDetailViewModel()
+            RouteDetailViewModel(get())
         }
     }
 )

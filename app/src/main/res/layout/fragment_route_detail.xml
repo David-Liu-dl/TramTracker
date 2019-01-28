@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/tram_image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_tram"
+            android:layout_marginTop="@dimen/marginMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <LinearLayout
+            android:id="@+id/tram_info_liner_layout"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMedium"
+            app:layout_constraintTop_toBottomOf="@id/tram_image_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    >
+        <TextView
+                android:id="@+id/direction_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:textSize="@dimen/textSizeNormal"
+                android:textColor="@color/colorNormalText"
+                android:gravity="center_vertical"
+                tools:text="To North Richmond"
+        />
+
+        <TextView
+                android:id="@+id/time_remain_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/marginMedium"
+                android:textSize="@dimen/textSizeMedium"
+                android:textColor="@color/colorSecondaryDark"
+                android:gravity="end"
+                tools:text="in 3 mins"
+        />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/special_event_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMedium"
+            app:layout_constraintTop_toBottomOf="@id/tram_info_liner_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

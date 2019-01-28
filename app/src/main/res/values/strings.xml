@@ -6,6 +6,7 @@
     <string name="label_direction_south">To South</string>
     <string name="label_tram_id">Tram %1$d</string>
     <string name="label_time_remain">in %1$d mins</string>
+    <string name="label_no_special_event">No Special Event</string>
 
     <string name="action_retry">RETRY</string>
 
