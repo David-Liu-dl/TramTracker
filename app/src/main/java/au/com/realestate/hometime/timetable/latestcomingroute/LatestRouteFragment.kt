@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -82,6 +83,8 @@ class LatestRouteFragment : Fragment() {
             setColorSchemeResources(R.color.colorSecondary)
         }
 
+        updateToolbar()
+
         viewModel.refreshingRoute()
 
         return view
@@ -139,6 +142,18 @@ class LatestRouteFragment : Fragment() {
     override fun onDetach() {
         super.onDetach()
         routeNavigationHandler = null
+    }
+
+    private fun updateToolbar() {
+        (activity as? AppCompatActivity)?.apply {
+            val backEntryCount = supportFragmentManager.backStackEntryCount
+
+            supportActionBar?.apply {
+                title = getString(R.string.toolbar_title_latest_coming_tram_fragment)
+                setDisplayHomeAsUpEnabled(backEntryCount != 0)
+                setDisplayShowHomeEnabled(backEntryCount != 0)
+            }
+        }
     }
 
     private val onRetryListener: View.OnClickListener = View.OnClickListener {

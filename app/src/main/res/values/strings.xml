@@ -1,5 +1,8 @@
 <resources>
 
+    <string name="toolbar_title_latest_coming_tram_fragment">Welcome to HomeTime</string>
+    <string name="toolbar_title_route_detail_fragment">Vehicle %1$d</string>
+
     <string name="time_last_update_dated">Last updated on: %1$s</string>
 
     <string name="label_direction_north">To North</string>

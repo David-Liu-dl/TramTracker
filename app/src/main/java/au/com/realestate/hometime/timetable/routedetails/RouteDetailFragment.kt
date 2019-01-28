@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import au.com.realestate.hometime.R
@@ -61,6 +62,8 @@ class RouteDetailFragment : Fragment() {
 
         ButterKnife.bind(this, view)
 
+        updateToolbar()
+
         return view
     }
 
@@ -82,5 +85,17 @@ class RouteDetailFragment : Fragment() {
                 }
             }
         })
+    }
+
+    private fun updateToolbar() {
+        (activity as? AppCompatActivity)?.apply {
+            val backEntryCount = supportFragmentManager.backStackEntryCount
+
+            supportActionBar?.apply {
+                title = getString(R.string.toolbar_title_route_detail_fragment, arguments?.getInt(PARCELABLE_VEHICLE_ID))
+                setDisplayHomeAsUpEnabled(backEntryCount != 0)
+                setDisplayShowHomeEnabled(backEntryCount != 0)
+            }
+        }
     }
 }

@@ -1,15 +1,20 @@
 <resources>
 
-    <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light">
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorError">@color/colorError</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="Theme.HomeTime" parent="BaseAppTheme">
         <item name="android:statusBarColor">?colorPrimary</item>
         <item name="android:navigationBarColor">?colorSecondary</item>
     </style>
+
+    <style name="Theme.HomeTime.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
+    <style name="Theme.HomeTime.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
 </resources>

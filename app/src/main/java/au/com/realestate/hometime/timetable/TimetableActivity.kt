@@ -1,18 +1,28 @@
 package au.com.realestate.hometime.timetable
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commitNow
 import androidx.lifecycle.Observer
 import au.com.realestate.hometime.R
 import au.com.realestate.hometime.timetable.latestcomingroute.LatestRouteFragment
 import au.com.realestate.hometime.timetable.routedetails.RouteDetailFragment
+import butterknife.BindView
+import butterknife.ButterKnife
+import butterknife.Unbinder
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 import java.lang.ClassCastException
 
 class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
+
+    @BindView(R.id.toolbar)
+    lateinit var toolbar: Toolbar
+
+    private lateinit var unbinder: Unbinder
 
     private val viewModel by viewModel<TimetableViewModel>(
         parameters = { parametersOf(Navigation(LatestRouteFragment.TAG, EmptyParams())) }
@@ -35,12 +45,16 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timetable)
+        unbinder = ButterKnife.bind(this)
+
+        setSupportActionBar(toolbar)
+
         viewModel.fragmentNavigator.observe(this, Observer { navigation ->
             navigation?.let {
                 val tag = navigation.fragmentTag
                 val params = navigation.params
 
-                when (navigation.fragmentTag) {
+                when (tag) {
                     LatestRouteFragment.TAG -> {
                         showNewScreen(latestComingTramFragmentProvider, null, tag)
                     }
@@ -57,8 +71,21 @@ class TimetableActivity : AppCompatActivity(), RouteNavigationHandler {
 
     override fun onDestroy() {
         super.onDestroy()
+        unbinder.unbind()
         viewModel.fragmentNavigator.value = null
     }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when(item?.itemId){
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
     override fun navigateToRouteDetailFragment(vehicleId: Int) {
         viewModel.navigateToRouteDetailFragment(RouteDetailFragmentParam(vehicleId))
     }
