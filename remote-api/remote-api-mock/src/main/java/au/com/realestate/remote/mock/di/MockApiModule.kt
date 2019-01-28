@@ -31,45 +31,51 @@ val mockApiModule = module {
                 callTimeout(apiConfigs.networkTimeoutSeconds, TimeUnit.SECONDS)
                 // add logging interceptor
                 addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BASIC))
-            }.build()
+            }
+            .build()
     }
 
     single {
-        Retrofit.Builder().apply {
-            baseUrl(DUMMY_URL)
-            addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            client(get())
-        }.build()
+        Retrofit.Builder()
+            .apply {
+                baseUrl(DUMMY_URL)
+                addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                client(get())
+            }
+            .build()
     }
 
     single {
-        NetworkBehavior.create().apply {
-            // make sure behavior is deterministic
-            setVariancePercent(0)
-            // no delay by default
-            setDelay(0, TimeUnit.MILLISECONDS)
-            // no failure by default
-            setFailurePercent(0)
-        }
+        NetworkBehavior.create()
+            .apply {
+                // make sure behavior is deterministic
+                setVariancePercent(0)
+                // no delay by default
+                setDelay(0, TimeUnit.MILLISECONDS)
+                // no failure by default
+                setFailurePercent(0)
+            }
     }
 
-    single <AuthService>{
+    single<AuthService> {
         MockAuthService(
             MockRetrofit.Builder(get())
-                .let { builder ->
-                    builder.networkBehavior(get())
-                    builder.build().create(AuthService::class.java)
+                .apply {
+                    networkBehavior(get())
                 }
+                .build()
+                .create(AuthService::class.java)
         )
     }
 
     single<TramService> {
         MockTramService(
             MockRetrofit.Builder(get())
-                .let { builder ->
-                    builder.networkBehavior(get())
-                    builder.build().create(TramService::class.java)
+                .apply {
+                    networkBehavior(get())
                 }
+                .build()
+                .create(TramService::class.java)
         )
     }
 }
